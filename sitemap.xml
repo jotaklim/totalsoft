@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/solutions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/solutions/charisma/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/testimonials/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/testimonials/gecapital/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/testimonials/raiffeisen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/testimonials/tbicredit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/solutions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/testimonials/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
