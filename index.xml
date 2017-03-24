@@ -18,25 +18,17 @@
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
   {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
 
-    {{ if .Site.Params.about.enable }}
       {{ partial &#34;about.html&#34; . }}
-    {{ end }}
 
-    {{ if .Site.Params.contact.enable }}
       {{ partial &#34;contact.html&#34; . }}
-    {{ end }}
 
     {{ partial &#34;footer.html&#34; . }}
 
-    {{ if .Site.Params.portfolio.enable }}
-      {{ partial &#34;modals.html&#34; . }}
-    {{ end }}
-
-    {{ partial &#34;js.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;</description>
     </item>
@@ -51,29 +43,15 @@
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
   {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
-    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
-
-    {{ if .Site.Params.services.enable }}
-      {{ partial &#34;services.html&#34; . }}
-    {{ end }}
-
-      {{ partial &#34;solutions.html&#34; . }}
-
-
-        {{ if .Site.Params.contact.enable }}
-      {{ partial &#34;contact-solutions.html&#34; . }}
-    {{ end }}
-
+    {{ partial &#34;services.html&#34; . }}
+    {{ partial &#34;solutions.html&#34; . }}
+    {{ partial &#34;contact-solutions.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
-
-    {{ if .Site.Params.portfolio.enable }}
-      {{ partial &#34;modals.html&#34; . }}
-    {{ end }}
-
-    {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;modals.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -112,6 +90,27 @@
     
     <item>
       <title></title>
+      <link>http://totalsoft.azurewebsites.net/terms-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/terms-and-conditions/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;terms-conditions.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://totalsoft.azurewebsites.net/testimonials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -124,17 +123,9 @@
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
-
-
-      {{ partial &#34;testimonials.html&#34; . }}
-
-
-    {{ if .Site.Params.contact.enable }}
-      {{ partial &#34;contact-testimonials.html&#34; . }}
-    {{ end }}
-
+    {{ partial &#34;testimonials.html&#34; . }}
+    {{ partial &#34;contact-testimonials.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
-
   &lt;/body&gt;
 &lt;/html&gt;</description>
     </item>
