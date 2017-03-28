@@ -21,14 +21,15 @@
     {{ partial &#34;js.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
     {{ partial &#34;nav1.html&#34; . }}
-
-      {{ partial &#34;about.html&#34; . }}
-
-      {{ partial &#34;contact.html&#34; . }}
-
+    {{ partial &#34;about.html&#34; . }}
+    {{ partial &#34;contact.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
-
   &lt;/body&gt;
 &lt;/html&gt;</description>
     </item>
@@ -46,6 +47,11 @@
     {{ partial &#34;js.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
     {{ partial &#34;nav1.html&#34; . }}
     {{ partial &#34;services.html&#34; . }}
     {{ partial &#34;solutions.html&#34; . }}
@@ -101,6 +107,11 @@
     {{ partial &#34;js.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
     {{ partial &#34;nav1.html&#34; . }}
     {{ partial &#34;terms-conditions.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
@@ -122,6 +133,11 @@
     {{ partial &#34;js.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
     {{ partial &#34;nav1.html&#34; . }}
     {{ partial &#34;testimonials.html&#34; . }}
     {{ partial &#34;contact-testimonials.html&#34; . }}
