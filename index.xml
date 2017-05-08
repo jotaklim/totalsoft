@@ -28,10 +28,118 @@
 
     {{ partial &#34;nav1.html&#34; . }}
     {{ partial &#34;about.html&#34; . }}
-    {{ partial &#34;contact.html&#34; . }}
+    {{ partial &#34;contact-solutions.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;resources.html&#34; . }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/accounting-standards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/accounting-standards/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  {{ partial &#34;head.html&#34; . }}
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/information-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/information-security/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  {{ partial &#34;head.html&#34; . }}
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/what-is-erp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/what-is-erp/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+&lt;meta name=&#34;description&#34; content=&#34;15 statistics that will help you understand what ERP is and how it makes business more competitive
+&#34;&gt;
+
+  {{ partial &#34;head.html&#34; . }}
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
     </item>
     
     <item>
@@ -58,6 +166,7 @@
     {{ partial &#34;contact-solutions.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
     {{ partial &#34;modals.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -81,7 +190,7 @@
 
       {{ partial &#34;charisma.html&#34; . }}
 
-      {{ partial &#34;contact.html&#34; . }}
+      {{ partial &#34;contact-testimonials.html&#34; . }}
 
       {{ partial &#34;footer.html&#34; . }}
 
@@ -115,6 +224,7 @@
     {{ partial &#34;nav1.html&#34; . }}
     {{ partial &#34;terms-conditions.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -142,6 +252,7 @@
     {{ partial &#34;testimonials.html&#34; . }}
     {{ partial &#34;contact-testimonials.html&#34; . }}
     {{ partial &#34;footer.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;</description>
     </item>
@@ -168,6 +279,7 @@
     {{ partial &#34;footer.html&#34; . }}
 
     {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -195,6 +307,7 @@
     {{ partial &#34;footer.html&#34; . }}
 
     {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -213,7 +326,6 @@
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
-    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
 
     {{ if .Site.Params.services.enable }}
       {{ partial &#34;testimonial-tbicredit.html&#34; . }}
@@ -222,6 +334,7 @@
     {{ partial &#34;footer.html&#34; . }}
 
     {{ partial &#34;js.html&#34; . }}
+    {{ partial &#34;hubspot.html&#34; . }}
   &lt;/body&gt;
 &lt;/html&gt;
 </description>

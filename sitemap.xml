@@ -6,6 +6,22 @@
   </url>
   
   <url>
+    <loc>http://totalsoft.azurewebsites.net/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/resources/accounting-standards/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/resources/information-security/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/resources/what-is-erp/</loc>
+  </url>
+  
+  <url>
     <loc>http://totalsoft.azurewebsites.net/solutions/</loc>
   </url>
   
@@ -31,6 +47,11 @@
   
   <url>
     <loc>http://totalsoft.azurewebsites.net/testimonials/tbicredit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://totalsoft.azurewebsites.net/resources/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

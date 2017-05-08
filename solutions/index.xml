@@ -26,7 +26,7 @@
 
       {{ partial &#34;charisma.html&#34; . }}
 
-      {{ partial &#34;contact.html&#34; . }}
+      {{ partial &#34;contact-testimonials.html&#34; . }}
 
       {{ partial &#34;footer.html&#34; . }}
 

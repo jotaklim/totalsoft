@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Testimonials on TotalSoft</title>
-    <link>http://totalsoft.azurewebsites.net/testimonials/index.xml</link>
-    <description>Recent content in Testimonials on TotalSoft</description>
+    <title>Resources on TotalSoft</title>
+    <link>http://totalsoft.azurewebsites.net/resources/index.xml</link>
+    <description>Recent content in Resources on TotalSoft</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://totalsoft.azurewebsites.net/testimonials/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://totalsoft.azurewebsites.net/resources/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://totalsoft.azurewebsites.net/testimonials/gecapital/</link>
+      <link>http://totalsoft.azurewebsites.net/resources/accounting-standards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://totalsoft.azurewebsites.net/testimonials/gecapital/</guid>
+      <guid>http://totalsoft.azurewebsites.net/resources/accounting-standards/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
   {{ partial &#34;head.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
-    {{ partial &#34;nav1.html&#34; . }}
-    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
-
     {{ if .Site.Params.services.enable }}
-      {{ partial &#34;testimonial-gecapital.html&#34; . }}
+      {{ partial &#34;resources-erp.html&#34; . }}
     {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
 
     {{ partial &#34;footer.html&#34; . }}
 
@@ -38,22 +36,20 @@
     
     <item>
       <title></title>
-      <link>http://totalsoft.azurewebsites.net/testimonials/raiffeisen/</link>
+      <link>http://totalsoft.azurewebsites.net/resources/information-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://totalsoft.azurewebsites.net/testimonials/raiffeisen/</guid>
+      <guid>http://totalsoft.azurewebsites.net/resources/information-security/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
   {{ partial &#34;head.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
-    {{ partial &#34;nav1.html&#34; . }}
-    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
-
     {{ if .Site.Params.services.enable }}
-      {{ partial &#34;testimonial-raiffeisen.html&#34; . }}
+      {{ partial &#34;resources-erp.html&#34; . }}
     {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
 
     {{ partial &#34;footer.html&#34; . }}
 
@@ -66,21 +62,22 @@
     
     <item>
       <title></title>
-      <link>http://totalsoft.azurewebsites.net/testimonials/tbicredit/</link>
+      <link>http://totalsoft.azurewebsites.net/resources/what-is-erp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://totalsoft.azurewebsites.net/testimonials/tbicredit/</guid>
+      <guid>http://totalsoft.azurewebsites.net/resources/what-is-erp/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+&lt;meta name=&#34;description&#34; content=&#34;15 statistics that will help you understand what ERP is and how it makes business more competitive
+&#34;&gt;
 
   {{ partial &#34;head.html&#34; . }}
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
-    {{ partial &#34;nav1.html&#34; . }}
-
     {{ if .Site.Params.services.enable }}
-      {{ partial &#34;testimonial-tbicredit.html&#34; . }}
+      {{ partial &#34;resources-erp.html&#34; . }}
     {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
 
     {{ partial &#34;footer.html&#34; . }}
 
