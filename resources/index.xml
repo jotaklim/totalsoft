@@ -28,7 +28,7 @@
     {{ partial &#34;footer.html&#34; . }}
 
     {{ partial &#34;js.html&#34; . }}
-    {{ partial &#34;hubspot.html&#34; . }}
+
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -54,7 +54,7 @@
     {{ partial &#34;footer.html&#34; . }}
 
     {{ partial &#34;js.html&#34; . }}
-    {{ partial &#34;hubspot.html&#34; . }}
+
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
@@ -82,7 +82,7 @@
     {{ partial &#34;footer.html&#34; . }}
 
     {{ partial &#34;js.html&#34; . }}
-    {{ partial &#34;hubspot.html&#34; . }}
+
   &lt;/body&gt;
 &lt;/html&gt;
 </description>
