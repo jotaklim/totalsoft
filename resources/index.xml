@@ -17,7 +17,10 @@
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
-  {{ partial &#34;head.html&#34; . }}
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ if .Site.Params.services.enable }}
@@ -43,11 +46,43 @@
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
-  {{ partial &#34;head.html&#34; . }}
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ if .Site.Params.services.enable }}
       {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/trends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/trends/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;We rounded up what is currently up in the ERP market. Read now about the 2017 ERP trends.&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-trends.html&#34; . }}
     {{ end }}
     {{ partial &#34;contact-resources.html&#34; . }}
 
@@ -68,10 +103,11 @@
       <guid>http://totalsoft.azurewebsites.net/resources/what-is-erp/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
-&lt;meta name=&#34;description&#34; content=&#34;15 statistics that will help you understand what ERP is and how it makes business more competitive
-&#34;&gt;
 
-  {{ partial &#34;head.html&#34; . }}
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;15 statistics that will help you understand what ERP is and how it makes business more competitive&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ if .Site.Params.services.enable }}

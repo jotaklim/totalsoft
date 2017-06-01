@@ -17,11 +17,13 @@
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
-  {{ partial &#34;head.html&#34; . }}
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
-    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
 
     {{ if .Site.Params.services.enable }}
       {{ partial &#34;testimonial-gecapital.html&#34; . }}
@@ -44,11 +46,13 @@
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
-  {{ partial &#34;head.html&#34; . }}
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
-    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
 
     {{ if .Site.Params.services.enable }}
       {{ partial &#34;testimonial-raiffeisen.html&#34; . }}
@@ -71,7 +75,10 @@
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
 
-  {{ partial &#34;head.html&#34; . }}
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
 
   &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
     {{ partial &#34;nav1.html&#34; . }}
