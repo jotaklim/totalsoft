@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TotalSoft</title>
+    <link>http://totalsoft.azurewebsites.net/index.xml</link>
+    <description>Recent content on TotalSoft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://totalsoft.azurewebsites.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/about/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;about.html&#34; . }}
+    {{ partial &#34;contact-solutions.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;resources.html&#34; . }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/accounting-standards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/accounting-standards/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/information-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/information-security/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/trends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/trends/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;We rounded up what is currently up in the ERP market. Read now about the 2017 ERP trends.&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-trends.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/resources/what-is-erp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/resources/what-is-erp/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;15 statistics that will help you understand what ERP is and how it makes business more competitive&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;resources-erp.html&#34; . }}
+    {{ end }}
+    {{ partial &#34;contact-resources.html&#34; . }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/solutions/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;services.html&#34; . }}
+    {{ partial &#34;solutions.html&#34; . }}
+    {{ partial &#34;contact-solutions.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+    {{ partial &#34;modals.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/solutions/charisma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/solutions/charisma/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;Get the best in contract lifecycle management, ERP, CRM &amp; BI: Charisma Business Suite has the trust of 2 of TOP 5 leasing companies in Europe.&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ partial &#34;nav1.html&#34; . }}
+    &lt;!-- {{ partial &#34;hero.html&#34; . }} --&gt;
+
+      {{ partial &#34;charisma.html&#34; . }}
+
+      {{ partial &#34;contact-testimonials.html&#34; . }}
+
+      {{ partial &#34;footer.html&#34; . }}
+
+    {{ if .Site.Params.portfolio.enable }}
+      {{ partial &#34;modals.html&#34; . }}
+    {{ end }}
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/terms-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/terms-and-conditions/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;terms-conditions.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/testimonials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/testimonials/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+
+    &lt;!-- Google Tag Manager (noscript) --&gt;
+  &lt;noscript&gt;&lt;iframe src=&#34;https://www.googletagmanager.com/ns.html?id=GTM-WBCZLRG&#34; height=&#34;0&#34; width=&#34;0&#34; style=&#34;display:none;visibility:hidden&#34;&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+    {{ partial &#34;nav1.html&#34; . }}
+    {{ partial &#34;testimonials.html&#34; . }}
+    {{ partial &#34;contact-testimonials.html&#34; . }}
+    {{ partial &#34;footer.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/testimonials/gecapital/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/testimonials/gecapital/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ partial &#34;nav1.html&#34; . }}
+
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;testimonial-gecapital.html&#34; . }}
+    {{ end }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/testimonials/raiffeisen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/testimonials/raiffeisen/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ partial &#34;nav1.html&#34; . }}
+
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;testimonial-raiffeisen.html&#34; . }}
+    {{ end }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://totalsoft.azurewebsites.net/testimonials/tbicredit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://totalsoft.azurewebsites.net/testimonials/tbicredit/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}&#34;&gt;
+
+  &lt;head&gt;
+    &lt;meta name=&#34;description&#34; content=&#34;&#34;&gt;
+    {{ partial &#34;head.html&#34; . }}
+  &lt;/head&gt;
+
+  &lt;body id=&#34;page-top&#34; class=&#34;index&#34;&gt;
+    {{ partial &#34;nav1.html&#34; . }}
+
+    {{ if .Site.Params.services.enable }}
+      {{ partial &#34;testimonial-tbicredit.html&#34; . }}
+    {{ end }}
+
+    {{ partial &#34;footer.html&#34; . }}
+
+    {{ partial &#34;js.html&#34; . }}
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
