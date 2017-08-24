@@ -1,0 +1,747 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>site name</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Cormorant+Garamond:300,400,500,600,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="">
+
+<header class="mainheader-home cf">
+    <a href="home.html" class="fl logo">
+        <img src="assets/img/logo-white.png" srcset="assets/img/logo-white.png 1x, assets/img/logo-white@2x.png 2x" alt="">
+    </a>
+    <div class="fr">
+        <a href="" class="btn-signin">About Us</a>
+        <a href="login.html" class="btn-signin">Sign In</a>
+        <a href="calculators.html" class="btn-signin">Financial calculators</a>
+    </div>
+</header>
+
+
+
+
+<main class="main-container-home">
+
+
+<section class="home-hero" style="background-image: url(assets/img/hero.jpg)">
+    <div class="text-center">
+        <h1 class="home-title wow fadeInUp" data-wow-delay="0.2s">
+            Get to "yes"!
+        </h1>
+        <p class="wow fadeInUp" data-wow-delay="0.6s"><span class="vam">We help you to find a</span>
+            <span class="word-slider vam">
+        <span class="ws-item">Loan</span>
+        <span class="ws-item">Lease</span>
+        <span class="ws-item">Credit</span>
+      </span>
+            <span class="vam">that fits into your pocket.</span></p>
+        <p class="wow fadeInUp" data-wow-delay="1s">Take our online interview and be on your way to realizing your
+            dreams.</p>
+        <a href="" class="btn-white-home scroll_to wow fadeInUp" data-href="quiz" data-wow-delay="1.4s">Take an
+            interview</a>
+
+
+    </div>
+    <!--<a href="" class="btn-home scroll_to wow fadeIn" data-wow-delay="1.3s" data-href="quiz">Get to "yes"!</a>-->
+</section>
+
+<section class="section-quiz" data-id="quiz">
+    <div class="wrap-home">
+        <div class="quiz-wrap" id="quiz_wrap">
+            <div class="quiz-wrap-inner ">
+                <div class="quiz-text-top">
+                    <p>Hello, I am your digital financial adviser. After taking a few details, I will give you a clear
+                        idea of how your Loan can look like. </p>
+                    <p>This will take less than 5 minutes. I don’t require credit checks.</p>
+                </div>
+
+                <div class="data_open_block">
+
+                    <div class="quiz-question-block">
+                        <div class="label">I am…</div>
+                        <div class="qq-questlist">
+                            <div class="qq-option-wrap">
+                                <input type="radio" name="im" id="buscustomer" data-open="buscustomer">
+                                <label for="buscustomer">a business owner or representing a legal entity</label>
+                            </div>
+                            <div class="qq-option-wrap">
+                                <input type="radio" name="im" id="indcustomer" data-open="indcustomer">
+                                <label for="indcustomer">an individual consumer</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden_block data_open_block" data-openwrap="buscustomer">
+                        <div class="quiz-question-block">
+                            <div class="label">I am looking for…</div>
+                            <div class="qq-questlist">
+                                <div class="eq-check-list grid-row">
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_b" id="eq1" data-open="busasset">
+                                        <label for="eq1">
+                    <span class="eq-item icon-eq20">
+                      <span class="title">Vehicles</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_b" id="eq2" data-open="busasset">
+                                        <label for="eq2">
+                    <span class="eq-item icon-eq7">
+                      <span class="title">Electronics</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_b" id="eq3" data-open="busasset">
+                                        <label for="eq3">
+                    <span class="eq-item icon-eq21">
+                      <span class="title">Machinery or<br/>industrial<br/>equipment</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_b" id="eq4" data-open="busasset">
+                                        <label for="eq4">
+                    <span class="eq-item icon-eq22">
+                      <span class="title">Property</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_b" id="eq5" data-open="buscapital">
+                                        <label for="eq5">
+                    <span class="eq-item icon-eq23">
+                      <span class="title">Capital</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_b" id="eq6" data-open="buscapital">
+                                        <label for="eq6">
+                    <span class="eq-item icon-eq24">
+                      <span class="title">Debt refinancing</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden_block data_open_block" data-openwrap="busasset">
+                            <div class="quiz-question-block">
+                                <div class="label">How much do you earn in a year</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">What is the combined value of your debt, including credit card
+                                    balances and other loans
+                                </div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">Have you applied for bankruptcy or had defaults on any of your
+                                    accounts in the last year?
+                                </div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b1">
+                                        <label for="bankr_b1">Yes</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b2">
+                                        <label for="bankr_b2">No</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">In how many installments do you want to divide your repayment?</div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b1">
+                                        <label for="inst_b1">6 months</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b4">
+                                        <label for="inst_b4">1 year</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b2">
+                                        <label for="inst_b2">2 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b5">
+                                        <label for="inst_b5">3 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b3">
+                                        <label for="inst_b3">4 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b6">
+                                        <label for="inst_b6">5 years</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">How much can you deposit upfront?</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-btns-bottom cf">
+                                <!--<a href="" class="btn-next js_ajax-load fl" data-container="quiz_wrap" data-url="ajax-modules/quiz-lease.html">Go Back</a>-->
+                                <a href="" class="btn-next js_ajax-load" data-container="quiz_wrap"
+                                   data-url="ajax-modules/interview_business_end.html">Go Next</a>
+                            </div>
+                        </div>
+
+                        <div class="hidden_block data_open_block" data-openwrap="buscapital">
+                            <div class="quiz-question-block">
+                                <div class="label">How much do you earn in a year</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">What is the combined value of your debt, including credit card
+                                    balances and other loans
+                                </div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">Have you applied for bankruptcy or had defaults on any of your
+                                    accounts in the last year?
+                                </div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b1-2">
+                                        <label for="bankr_b1-2">Yes</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b2-2">
+                                        <label for="bankr_b2-2">No</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">In how many installments do you want to divide your repayment?</div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b1-2">
+                                        <label for="inst_b1-2">6 months</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b4-2">
+                                        <label for="inst_b4-2">1 year</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b2-2">
+                                        <label for="inst_b2-2">2 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b5-2">
+                                        <label for="inst_b5-2">3 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b3-2">
+                                        <label for="inst_b3-2">4 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b6-2">
+                                        <label for="inst_b6-2">5 years</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">How much do you want to borrow?</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">Which securities can you offer?</div>
+                                <div class="qq-questlist">
+                                    <div class="eq-check-list grid-row">
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq22" data-tip data-position="bottom"
+                                                      data-tiptext="Property value">
+                                                <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq20" data-tip data-position="bottom"
+                                                      data-tiptext="Vehicle value">
+                                                    <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq21" data-tip data-position="bottom"
+                                                      data-tiptext="Machinery or industrial<br/>equipment value">
+                                                    <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq25" data-tip data-position="bottom"
+                                                      data-tiptext="Jewelry value">
+                                                    <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="quiz-btns-bottom cf">
+                                        <!--<a href="" class="btn-next js_ajax-load fl" data-container="quiz_wrap" data-url="ajax-modules/quiz-lease.html">Go Back</a>-->
+                                        <a href="" class="btn-next js_ajax-load" data-container="quiz_wrap"
+                                           data-url="ajax-modules/interview_business_end.html">Go Next</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="hidden_block data_open_block" data-openwrap="indcustomer">
+                        <div class="quiz-question-block">
+                            <div class="label">I am looking for…</div>
+                            <div class="qq-questlist">
+                                <div class="eq-check-list grid-row">
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_i" id="eq1-ind" data-open="indasset">
+                                        <label for="eq1-ind">
+                    <span class="eq-item icon-eq20">
+                      <span class="title">Vehicles</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_i" id="eq2-ind" data-open="indasset">
+                                        <label for="eq2-ind">
+                    <span class="eq-item icon-eq7">
+                      <span class="title">Electronics</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_i" id="eq3-ind" data-open="indasset">
+                                        <label for="eq3-ind">
+                    <span class="eq-item icon-eq21">
+                      <span class="title">Appliances</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_i" id="eq4-ind" data-open="indasset">
+                                        <label for="eq4-ind">
+                    <span class="eq-item icon-eq22">
+                      <span class="title">Property</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+                                    <div class="eq-check-wrap grid-6">
+                                        <input type="radio" name="lookfor_i" id="eq5-ind" data-open="indcapital">
+                                        <label for="eq5-ind">
+                    <span class="eq-item icon-eq23">
+                      <span class="title">Cash</span>
+                    </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden_block data_open_block" data-openwrap="indasset">
+                            <div class="quiz-question-block">
+                                <div class="label">How much do you earn in a year</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">What is the combined value of your debt, including credit card
+                                    balances and other loans
+                                </div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">Have you applied for bankruptcy or had defaults on any of your
+                                    accounts in the last year?
+                                </div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b1-ind">
+                                        <label for="bankr_b1-ind">Yes</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b2-ind">
+                                        <label for="bankr_b2-ind">No</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">In how many installments do you want to divide your repayment?</div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b1-ind">
+                                        <label for="inst_b1-ind">6 months</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b4-ind">
+                                        <label for="inst_b4-ind">1 year</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b2-ind">
+                                        <label for="inst_b2-ind">2 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b5-ind">
+                                        <label for="inst_b5-ind">3 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b3-ind">
+                                        <label for="inst_b3-ind">4 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b6-ind">
+                                        <label for="inst_b6-ind">5 years</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">How much can you deposit upfront?</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-btns-bottom cf">
+                                <!--<a href="" class="btn-next js_ajax-load fl" data-container="quiz_wrap" data-url="ajax-modules/quiz-lease.html">Go Back</a>-->
+                                <a href="" class="btn-next js_ajax-load" data-container="quiz_wrap"
+                                   data-url="ajax-modules/interview_ind_end.html">Go Next</a>
+                            </div>
+                        </div>
+
+                        <div class="hidden_block data_open_block" data-openwrap="indcapital">
+                            <div class="quiz-question-block">
+                                <div class="label">How much do you earn in a year</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">What is the combined value of your debt, including credit card
+                                    balances and other loans
+                                </div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">Have you applied for bankruptcy or had defaults on any of your
+                                    accounts in the last year?
+                                </div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b1-2-ind">
+                                        <label for="bankr_b1-2-ind">Yes</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="bankr_b" id="bankr_b2-2-ind">
+                                        <label for="bankr_b2-2-ind">No</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">In how many installments do you want to divide your repayment?</div>
+                                <div class="qq-questlist questlist-inline">
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b1-2-ind">
+                                        <label for="inst_b1-2-ind">6 months</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b4-2-ind">
+                                        <label for="inst_b4-2-ind">1 year</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b2-2-ind">
+                                        <label for="inst_b2-2-ind">2 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b5-2-ind">
+                                        <label for="inst_b5-2-ind">3 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b3-2-ind">
+                                        <label for="inst_b3-2-ind">4 years</label>
+                                    </div>
+                                    <div class="qq-option-wrap">
+                                        <input type="radio" name="inst_b" id="inst_b6-2-ind">
+                                        <label for="inst_b6-2-ind">5 years</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">How much do you want to borrow?</div>
+                                <div class="qq-questlist">
+                                    <div class="qq-inp-wrap with-icon with-euro">
+                                        <input type="text" class="numbers_only">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-question-block">
+                                <div class="label">Which securities can you offer?</div>
+                                <div class="qq-questlist">
+                                    <div class="eq-check-list grid-row">
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq22" data-tip data-position="bottom"
+                                                      data-tiptext="Property value">
+                                                <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq20" data-tip data-position="bottom"
+                                                      data-tiptext="Vehicle value">
+                                                    <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq21" data-tip data-position="bottom"
+                                                      data-tiptext="Machinery or industrial<br/>equipment value">
+                                                    <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+                                        <div class="eq-check-wrap no-check grid-4">
+                                            <label>
+                                                <span class="eq-item icon-eq25" data-tip data-position="bottom"
+                                                      data-tiptext="Jewelry value">
+                                                    <span class="custom-tooltip"></span>
+                                                </span>
+                                            </label>
+
+                                            <div class="qq-inp-wrap with-icon with-euro">
+                                                <input type="text" placeholder="" class="numbers_only">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="quiz-btns-bottom cf">
+                                <!--<a href="" class="btn-next js_ajax-load fl" data-container="quiz_wrap" data-url="ajax-modules/quiz-lease.html">Go Back</a>-->
+                                <a href="" class="btn-next js_ajax-load" data-container="quiz_wrap"
+                                   data-url="ajax-modules/interview_ind_end.html">Go Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-top-triang section-bottom-triang">
+    <div class="wrap-home">
+
+        <h3 class="title-home-1 wow fadeInUp" data-wow-delay="0">
+            You're in good company...
+        </h3>
+        <div class="partners-list wow fadeInUp" data-wow-delay="0">
+            <div class="pl-item">
+                <img src="assets/img/logo.png" width="150" alt="">
+            </div>
+            <div class="pl-item">
+                <img src="assets/img/logo.png" width="150" alt="">
+            </div>
+            <div class="pl-item">
+                <img src="assets/img/logo.png" width="150" alt="">
+            </div>
+            <div class="pl-item">
+                <img src="assets/img/logo.png" width="150" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="section-feedbacks">
+    <div class="wrap-home">
+        <div class="slider-feedbacks init_slick">
+            <div class="sf-item">
+
+                <blockquote>FinTech Startup of the Year</blockquote>
+                <div class="name">Dale Cooper</div>
+                <div class="pos">CEO of some company</div>
+            </div>
+            <div class="sf-item">
+
+                <blockquote>Habito analyses deals from 60 lenders in seconds</blockquote>
+                <div class="name">Dale Cooper</div>
+                <div class="pos">CEO of some company</div>
+            </div>
+            <div class="sf-item">
+
+                <blockquote>Fintech has arrived in mortgages</blockquote>
+                <div class="name">Dale Cooper</div>
+                <div class="pos">CEO of some company</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="mainfooter-home">
+  <div class="wrap-home tac">
+    <div class="copy">&copy; SplashDev 2017.</div>
+  </div>
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
+

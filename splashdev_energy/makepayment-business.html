@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard-business.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Hans Kort</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/team1.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile-business.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard-business.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="history-business.html"><span class="icon-history"></span><span class="l-name">Billing History</span></a></li>
+        <li><a href="makepayment-business.html"><span class="icon-pay"></span><span class="l-name">Make a Payment</span></a></li>
+        <li><a href="input_meter-business.html"><span class="icon-pencil"></span><span class="l-name">Input Meter Reading</span></a></li>
+        <li><a href="consumption-business.html"><span class="icon-consumption"></span><span class="l-name">Energy Consumption</span></a></li>
+        <li><a href="floorplan-business.html"><span class="icon-floor"></span><span class="l-name">Floorplan</span></a></li>
+        <li><a href="tariff-business.html"><span class="icon-tariff"></span><span class="l-name">Choose Tariff</span></a></li>
+        <li><a href="roles-business.html"><span class="icon-users"></span><span class="l-name">Roles and permissions</span></a></li>
+        <li><a href="reminders-business.html"><span class="icon-reminders"></span><span class="l-name">Set Reminders</span></a></li>
+        <li><a href="profile-business.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container with-sidebar">
+    <div class="page-content">
+        <div class="page-title-wrap cf">
+            <h1 class="page-title">Make a payment</h1>
+        </div>
+
+
+
+        <div class="tabs-container tabs-general">
+            <ul class="tabs-nav">
+                <li class="tab-item active"><a data-href="currbill" href="">Current bill</a></li>
+                <li class="tab-item"><a data-href="uploadbill" href="">Upload bill</a></li>
+            </ul>
+            <div class="tab-content active" data-id="currbill">
+                <div class="grid-row">
+                    <div class="grid-2 excerpt-season excerpt-season-pay">
+                        <div class="title">Electricity</div>
+                        <div class="subtitle">30 June 2017 - 29 July 2017</div>
+                        <div class="item-row">
+                            <div class="img-cont"><span class="icon-electr"></span></div>
+
+                            <div class="consum">3,777.93 kWh</div>
+                            <div class="price">$470.73</div>
+
+                        </div>
+                    </div>
+                    <div class="grid-2 excerpt-season excerpt-season-pay">
+                        <div class="title">Gas</div>
+                        <div class="subtitle">30 June 2017 - 29 July 2017</div>
+                        <div class="item-row">
+                            <div class="img-cont"> <span class="icon-fire"></span></div>
+
+                            <div class="consum">364.3 therms</div>
+                            <div class="price">$318.11</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-btn-row cf">
+                    <div class="page-total fl">
+                        Total: <span class="price">$788.84</span>
+                    </div>
+                    <div class="fr"><a href="" class="add-link">Pay</a></div>
+                </div>
+            </div>
+            <div class="tab-content upload_bill_container" data-id="uploadbill">
+                <p>Add text: You can also pay online for services of our partner companies. Upload a picture of your phone bill or upload a picture of your cable network provider. We will forward the payment and save you the time of logging to other systems.</p>
+                <span data-container="uploadedbill_res" data-url="ajax-modules/bill-results.html" class="btn-green btn-upload upload_bill"><input
+                        type="file">Upload</span>
+                <div class="block-grey bill-container">
+                    <img id="uploaded-bill" src=""/>
+                </div>
+                <div id="uploadedbill_res"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="page-sidebar">
+        
+<div class="s-widget widget-simple">
+    <div class="ws-head">Ways to save</div>
+    <div class="ws-content">
+        <a href="energy_saving-business.html" class="add-link">See tips on how to save energy</a>
+    </div>
+</div>
+        <div class="s-widget widget-simple">
+    <div class="ws-head">Bill comparison ($)</div>
+    <div class="ws-content">
+        <div id="chart_comparison" class="chart-comparison sidebar-chart" style="height:160px;">
+
+        </div>
+        <script>
+            jQuery(document).ready(function(){
+                var chart = AmCharts.makeChart("chart_comparison", {
+                    "type": "serial",
+                    "theme": "light",
+                    "categoryField": "month",
+                    "rotate": false,
+                    "startDuration": 1,
+                    "color": "#A9A9A9",
+                    "categoryAxis": {
+                        "gridPosition": "start",
+                        "position": "left"
+                    },
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "balloonText": "Electricity:[[value]]$",
+                            "fillAlphas": 0.8,
+                            "id": "AmGraph-1",
+                            "lineAlpha": 0.2,
+                            "title": "Electricity",
+                            "type": "column",
+                            "valueField": "Electricity"
+                        },
+                        {
+                            "balloonText": "Gas:[[value]]$",
+                            "fillAlphas": 0.8,
+                            "id": "AmGraph-2",
+                            "lineAlpha": 0.2,
+                            "title": "Gas",
+                            "type": "column",
+                            "valueField": "Gas"
+                        }
+                    ],
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "position": "bottom",
+                            "axisAlpha": 0
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "month": 'May 2017',
+                            "Electricity": 234,
+                            "Gas": 290
+                        },
+                        {
+                            "month": 'June 2017',
+                            "Electricity": 250,
+                            "Gas": 189
+                        }
+                    ],
+                    "colors": [
+                        "#4cc4d5",
+                        "#0c4a7c",
+                        "#f5a623",
+                        "#43acd9",
+                        "#9013fe",
+                        "#a29b94"
+
+                    ],
+                    "export": {
+                        "enabled": false
+                    }
+
+                });
+            });
+        </script>
+    </div>
+
+</div>
+    </div>
+
+</div>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard-business.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Hans Kort</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/team1.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile-business.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard-business.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="history-business.html"><span class="icon-history"></span><span class="l-name">Billing History</span></a></li>
+        <li><a href="makepayment-business.html"><span class="icon-pay"></span><span class="l-name">Make a Payment</span></a></li>
+        <li><a href="input_meter-business.html"><span class="icon-pencil"></span><span class="l-name">Input Meter Reading</span></a></li>
+        <li><a href="consumption-business.html"><span class="icon-consumption"></span><span class="l-name">Energy Consumption</span></a></li>
+        <li><a href="floorplan-business.html"><span class="icon-floor"></span><span class="l-name">Floorplan</span></a></li>
+        <li><a href="tariff-business.html"><span class="icon-tariff"></span><span class="l-name">Choose Tariff</span></a></li>
+        <li><a href="roles-business.html"><span class="icon-users"></span><span class="l-name">Roles and permissions</span></a></li>
+        <li><a href="reminders-business.html"><span class="icon-reminders"></span><span class="l-name">Set Reminders</span></a></li>
+        <li><a href="profile-business.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container grid-row profile-page">
+  <div class="user-box-wrap">
+    <div class="img-cont edit_photo" style="background-image: url(assets/img/del/team1.jpg)">
+      <span class="icon-camera change_photo"><input type="file"></span>
+    </div>
+    <div class="username"><input type="text" class="inp-border" placeholder="Your Name" value="Hans Kort"></div>
+    <div class="userid">ID: 234657</div>
+
+    <a href="profile_edit-business.html" class="btn-green fr">Save Changes</a>
+
+  </div>
+  <div class="user-info">
+    <div class="page-title-wrap cf">
+     <h1 class="page-title">Edit profile</h1>
+    </div>
+    <div class="tabs-container tabs-general">
+      <ul class="tabs-nav">
+        <li class="tab-item active"><a data-href="personalinfo" href="">Personal Info</a></li>
+        <li class="tab-item"><a data-href="paymentinfo" href="">Payment Info</a></li>
+        <li class="tab-item"><a data-href="equipment" href="">Equipment</a></li>
+      </ul>
+      <div class="tab-content active" data-id="personalinfo">
+        <form action="">
+          <div class="inp-row-3">
+            <div class="inp-row">
+              <label for="">Your Email</label>
+              <input type="email" value="hanskort@gmail.com">
+            </div>
+            <div class="inp-row">
+              <label for="">Your Phone</label>
+              <input type="text" value="+38(093)743-77-88">
+            </div>
+            <div class="inp-row">
+              <label for="">Contract type</label>
+              <div class="custom-select">
+                    <span data-val="Business" class="current-value">
+                        Business
+                    </span>
+                    <div class="list-values">
+                      <a data-val="Business" class="current" href="#">Business</a>
+                      <a data-val="Customer" href="#">Customer</a>
+
+                    </div>
+                    <input type="hidden" id="" value="Business">
+              </div>
+            </div>
+            <div class="inp-row">
+              <label for="">Your Tariff</label>
+              <div class="custom-select">
+                    <span data-val="Customer" class="current-value">
+                        Tariff A
+                    </span>
+                <div class="list-values">
+                  <a data-val="Tariff A" class="current" href="#">Tariff A</a>
+                  <a data-val="Tariff B" href="#">Tariff B</a>
+                  <a data-val="Tariff C" href="#">Tariff C</a>
+                </div>
+                <input type="hidden" id="" value="Tariff A">
+              </div>
+            </div>
+            <div class="inp-row">
+              <label for="">House size (m<sup>2</sup>)</label>
+              <input type="text" value="105">
+            </div>
+          </div>
+          <div class="title-2">Address</div>
+          <div class="inp-row-3">
+            <div class="inp-row">
+              <label for="">Country</label>
+              <input type="text" value="Ukraine">
+            </div>
+            <div class="inp-row">
+              <label for="">City</label>
+              <input type="text" value="Dnipro">
+            </div>
+            <div class="inp-row">
+              <label for="">Zip Code</label>
+              <input type="text" value="49027">
+            </div>
+
+          </div>
+          <div class="inp-row">
+            <label for="">Address line</label>
+            <input type="text" value="str. Kuibysheva 5A, 28">
+          </div>
+          <div class="tar btn-wrap">
+          <button class="btn-green">Save Changes</button>
+          </div>
+        </form>
+      </div>
+      <div class="tab-content" data-id="paymentinfo">
+
+        <div class="title-2 with-btn cf">
+          <span class="fl title">Bank Accounts</span>
+          <a href="" data-href="bank_acc_list" class="add-link fr add_bank">Add new bank account</a>
+
+        </div>
+        <div class="bank_acc_list add-wrap" data-id="bank_acc_list">
+           <div class="bankacc-row">
+          <div class="inp-row-3">
+            <div class="inp-row">
+              <label for="">Bank name</label>
+              <input type="text" value="PrivatBank">
+            </div>
+            <div class="inp-row">
+              <label for="">Cardholder</label>
+              <input type="text" value="Hans Kort">
+            </div>
+            <div class="inp-row">
+              <label for="">Card type</label>
+              <div class="custom-select">
+                    <span data-val="Credit Card" class="current-value">
+                        Credit Card
+                    </span>
+                <div class="list-values">
+                  <a data-val="Credit Card" class="current" href="#">Credit Card</a>
+                  <a data-val=" Debit Card" href="#">Debit Card</a>
+                </div>
+                <input type="hidden" id="" value="Credit Card">
+              </div>
+            </div>
+            <div class="inp-row">
+              <label for="">Card number</label>
+              <input type="text" value="5637-2234-1856-5436">
+            </div>
+            <div class="inp-row">
+              <label for="">Expiration date</label>
+              <input type="text" value="07/2021">
+            </div>
+
+          </div>
+        </div>
+          <div class="bankacc-row">
+            <div class="inp-row-3">
+              <div class="inp-row">
+                <label for="">Bank name</label>
+                <input type="text" value="Raiffeisen">
+              </div>
+              <div class="inp-row">
+                <label for="">Cardholder</label>
+                <input type="text" value="Hans Kort">
+              </div>
+              <div class="inp-row">
+                <label for="">Card type</label>
+                <div class="custom-select">
+                    <span data-val="Credit Card" class="current-value">
+                        Debit Card
+                    </span>
+                  <div class="list-values">
+                    <a data-val="Debit Card" class="current" href="#">Debit Card</a>
+                    <a data-val="Credit Card" href="#">Credit Card</a>
+
+                  </div>
+                  <input type="hidden" id="" value="Debit Card">
+                </div>
+              </div>
+              <div class="inp-row">
+                <label for="">Card number</label>
+                <input type="text" value="5637-2234-1856-4563">
+              </div>
+              <div class="inp-row">
+                <label for="">Expiration date</label>
+                <input type="text" value="08/2019">
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="title-2 with-btn cf">
+          <span class="fl title">Paypal Accounts</span>
+          <a href="" data-href="pp_acc_list" class="add-link add_pp fr">Add new PayPal account</a>
+
+        </div>
+        <div class="pp_acc_list add-wrap" data-id="pp_acc_list">
+          <div class="bankacc-row">
+            <div class="inp-row-3">
+              <div class="inp-row">
+                <label for="">PayPal Email </label>
+                <input type="email" value="hanskort@gmail.com">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tar btn-wrap">
+          <button class="btn-green">Save Changes</button>
+        </div>
+      </div>
+      <div class="tab-content" data-id="equipment">
+        <div class="eq-check-list grid-row">
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" checked id="eq1">
+            <label for="eq1" title="Light bulbs">
+              <span class="eq-item icon-eq1"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" checked id="eq7">
+            <label for="eq7" title="Computer">
+              <span class="eq-item icon-eq7"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" checked id="eq6">
+            <label for="eq6" title="Laptop">
+              <span class="eq-item icon-eq8"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" checked id="eq4">
+            <label for="eq4" title="Air conditioning">
+              <span class="eq-item icon-eq4"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" checked id="eq13">
+            <label for="eq13" title="Radiator">
+              <span class="eq-item icon-eq13"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox"  id="eq2">
+            <label for="eq2" title="Mainframe">
+              <span class="eq-item icon-eq15"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="2">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox"  id="eq3">
+            <label for="eq3" title="Equipment in the production line">
+              <span class="eq-item icon-eq16"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox"  id="eq5">
+            <label for="eq5" title="Dust collection units">
+              <span class="eq-item icon-eq17"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" id="eq8">
+            <label for="eq8" title="Absorption cooling devices">
+              <span class="eq-item icon-eq18"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+          <div class="eq-check-wrap grid-4">
+            <input type="checkbox" id="eq9">
+            <label for="eq9" title="Cooling rotor blades">
+              <span class="eq-item icon-eq19"></span>
+            </label>
+            <span class="eq-amount">
+                <span class="txt">x </span><input type="text" value="1">
+              </span>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

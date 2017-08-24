@@ -1,0 +1,133 @@
+<div class="grid-row ">
+    <div class="block-grey grid-3-2    pb15">
+
+        <div class="filters-bar">
+            <div class="toggle-btns">
+                <a class="js_ajax-load " data-container="loan_chart3"
+                   data-url="ajax-modules/chart-sales-fun.html" href="">Sales funnel
+                </a> / <a class="js_ajax-load current" data-container="loan_chart3"
+                          data-url="ajax-modules/chart-loan-stat.html" href="">Open Loans Status</a>
+            </div>
+        </div>
+
+        <div id="loans_open" class="chart-s" style="height:350px;">
+
+        </div>
+        <script>
+            jQuery(document).ready(function () {
+                var chart = AmCharts.makeChart("loans_open",
+                    {
+                        "type": "pie",
+                        "balloonText": "[[value]]",
+                        "labelText": "",
+                        "titleField": "cat",
+                        "valueField": "amount",
+                        "fillAlphas": .3,
+                        "lineAlpha": 1,
+                        "startDuration": 1,
+                        "color": "#919191",
+                        "innerRadius": "50%",
+                        autoMargins: false,
+                        marginTop: 0,
+                        marginBottom: 15,
+                        marginLeft: 0,
+                        marginRight: 0,
+                        pullOutRadius: 0,
+//                               "categoryAxis": {
+//                                   "gridPosition": "start",
+//                                   "position": "left"
+//                               },
+                        "trendLines": [],
+                        "chartScrollbar": {
+                            "enabled": false
+                        },
+                        "graphs": [
+                            {
+                                "balloonText": "[[value]]",
+                                "fillAlphas": .3,
+                                "id": "AmGraph-11",
+//                                       "type": "column",
+                                "lineAlpha": 1,
+                                "title": "Loans on Schedule",
+                                "valueField": "cat"
+                            }
+//                                   {
+//                                       "balloonText": "[[value]]",
+//                                       "fillAlphas": .3,
+//                                       "id": "AmGraph-11",
+//                                       "type": "column",
+//                                       "lineAlpha": 1,
+//                                       "title": "Missed Repayments",
+//                                       "valueField": "missedrep"
+//                                   },
+//                                   {
+//                                       "balloonText": "[[value]]",
+//                                       "fillAlphas": .3,
+//                                       "id": "AmGraph-11",
+//                                       "type": "column",
+//                                       "lineAlpha": 1,
+//                                       "title": "Past Maturity ",
+//                                       "valueField": "pastmat"
+//                                   }
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "axisAlpha": 0
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+
+                        "titles": [],
+                        "dataProvider": [
+                            {
+                                "amount": 29,
+                                "cat": "Loans on Schedule"
+                            },
+                            {
+                                "amount": 14,
+                                "cat": "Missed Repayments"
+                            },
+                            {
+                                "amount": 10,
+                                "cat": "Past Maturity "
+                            }
+
+
+                        ],
+                        "colors": [
+                            "#0cd999",
+                            "#f5a623",
+                            "#d14f38",
+                            "#0c4a7c",
+
+
+                            "#0cd999",
+                            "#9013fe",
+                            "#a29b94"
+
+                        ],
+                        "legend": {
+                            "enabled": true,
+                            "align": "center",
+                            "markerType": "circle",
+//                                   "useGraphSettings": true,
+                            "color": "#919191"
+                        }
+                    }
+                );
+            });
+        </script>
+
+    </div>
+    <div class="grid-3-1 calc-txt">
+        <div class="title-4">Chart explanation</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fugiat quas quo unde vel.
+            Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi
+            harum molestiae neque reiciendis.</p>
+        <p>Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi harum
+            molestiae neque reiciendis.</p>
+    </div>
+</div>

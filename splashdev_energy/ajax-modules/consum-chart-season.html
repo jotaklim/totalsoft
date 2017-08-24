@@ -1,0 +1,140 @@
+<div class="filters-bar">
+    <div class="toggle-btns">
+        <a class="js_ajax-load " data-container="billchart_wrap" data-url="ajax-modules/consum-chart-daily.html"  href="">Per time of the day</a> / <a class="js_ajax-load current" data-container="billchart_wrap" data-url="ajax-modules/consum-chart-season.html"  href="">Per season</a> / <a class="js_ajax-load " data-container="billchart_wrap" data-url="ajax-modules/consum-chart-month.html"  href="">This month
+    </a> / <a class="js_ajax-load " data-container="billchart_wrap" data-url="ajax-modules/consum-chart-year.html"  href="">This year</a>
+    </div>
+</div>
+<div id="consum_wrap">
+    <div id="consum_chart_season" class="chart-s" style="height:350px;">
+
+    </div>
+    <script>
+        jQuery(document).ready(function(){
+            var chart = AmCharts.makeChart("consum_chart_season",
+                {
+                "type": "serial",
+                "theme": "light",
+                "categoryField": "month",
+                "rotate": false,
+                "startDuration": 1,
+                "color": "#919191",
+                "categoryAxis": {
+                    "gridPosition": "start",
+                    "position": "left"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "balloonText": "[[title]] : [[value]] kWh",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-11",
+                        "lineAlpha": 0.2,
+                        "title": "Electricity",
+                        "type": "column",
+                        "valueField": "Electricity"
+                    },
+
+                    {
+                        "balloonText": "[[title]] : [[value]] therms",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-32",
+                        "lineAlpha": 0.2,
+                        "title": "Gas",
+                        "type": "column",
+                        "valueField": "Gas"
+                    },
+                    {
+                        "balloonText": "[[title]] : [[value]]kWh",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-22",
+                        "lineAlpha": 0.2,
+                        "title": "Electricity Neighbors",
+                        "type": "column",
+                        "newStack": true,
+                        "valueField": "Electricity Neighbors"
+                    },
+                    {
+                        "balloonText": "[[title]] : [[value]] therms",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-42",
+                        "lineAlpha": 0.2,
+                        "title": "Gas Neighbors",
+                        "type": "column",
+                        "valueField": "Gas Neighbors"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-11",
+                        "stackType": "regular",
+                        "position": "bottom",
+                        "axisAlpha": 0
+                    },
+                    {
+                        "id": "ValueAxis-12",
+                        "stackType": "100%",
+                        "position": "bottom",
+                        "axisAlpha": 0
+                    }
+                ],
+
+                "allLabels": [],
+                "balloon": {},
+                "titles": [],
+                "dataProvider": [
+                    {
+                        "month": "Winter",
+                        "Electricity": 187,
+                        "Gas": 456,
+                        "Electricity Neighbors": 234,
+                        "Gas Neighbors": 320
+                    },
+                    {
+                        "month": 'Spring',
+                        "Electricity": 219,
+                        "Gas": 320,
+                        "Electricity Neighbors": 345,
+                        "Gas Neighbors": 280
+                    },
+                    {
+                        "month": 'Summer',
+                        "Electricity": 219,
+                        "Gas": 190,
+                        "Electricity Neighbors": 234,
+                        "Gas Neighbors": 240
+                    },
+                    {
+                        "month": 'Fall',
+                        "Electricity": 150,
+                        "Gas": 340,
+                        "Electricity Neighbors": 390,
+                        "Gas Neighbors": 320
+                    }
+
+                ],
+                "colors": [
+                    "#4cc4d5",
+                    "#0c4a7c",
+                    "#d4eff2",
+                    "rgba(12, 74, 124, 0.33)",
+                    "#f5a623",
+                    "#0cd999",
+                    "#9013fe",
+                    "#a29b94"
+
+                ],
+                "legend": {
+                    "enabled": true,
+                    "useGraphSettings": true,
+                    "color": "#919191"
+                },
+                "export": {
+                    "enabled": true
+                }
+
+            }
+            );
+        });
+    </script>
+</div>

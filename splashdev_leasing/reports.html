@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Cormorant+Garamond:300,400,500,600,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Dale Cooper</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/cooper.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="calculators_inner.html"><span class="icon-calculator"></span><span class="l-name">Calculators</span></a></li>
+        <li><a href="takeinterview.html"><span class="icon-quiz"></span><span class="l-name">Take an interview</span></a></li>
+        <li><a href="history.html"><span class="icon-history"></span><span class="l-name">Offers history</span></a></li>
+        <li><a href="comparison.html"><span class="icon-balance"></span><span class="l-name">Offers comparison</span></a></li>
+        <li><a href="reports.html"><span class="icon-consumption"></span><span class="l-name">Reports</span></a></li>
+        <li><a href="application.html"><span class="icon-pencil"></span><span class="l-name">Application</span></a></li>
+        <li><a href="application-history.html"><span class="icon-list-check"></span><span class="l-name">Applications history</span></a></li>
+        <li><a href="chat.html"><span class="icon-chat"></span><span class="l-name">Talk to a broker</span></a></li>
+        <li><a href="tips.html"><span class="icon-question"></span><span class="l-name">Financial advice</span></a></li>
+        <li><a href="profile.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container ">
+    <div class="page-inner">
+        <div class="page-title-wrap cf">
+            <h1 class="page-title">Reports</h1>
+        </div>
+
+
+
+        <div class="tabs-container tabs-general">
+            <ul class="tabs-nav">
+                <li class="tab-item active"><a data-href="pay" href="">Pay</a></li>
+                <li class="tab-item"><a data-href="progress" href="">View the progress</a></li>
+            </ul>
+            <div class="tab-content active" data-id="pay">
+
+                <div class="filters-bar">
+                    <div class="custom-select cs-year no-current">
+                    <span data-val="" class="current-value">
+                       Choose loan
+                    </span>
+                        <div class="list-values">
+                            <a data-val="Business" class="js_ajax-load " data-container="pay_loan" data-url="ajax-modules/pay_loan1.html" href="#">Loan 1</a>
+                            <a data-val="Business" class="js_ajax-load" data-container="pay_loan" data-url="ajax-modules/pay_loan2.html" href="#">Loan 2</a>
+                            <a data-val="Business" class="js_ajax-load" data-container="pay_loan" data-url="ajax-modules/pay_loan3.html" href="#">Loan 3</a>
+                        </div>
+                        <input type="hidden" id="" value="">
+                    </div>
+
+                </div>
+
+                <div id="pay_loan" class="pay-loan-wrap">
+
+                </div>
+
+
+            </div>
+            <div class="tab-content " data-id="progress">
+
+                <div class="grid-row row-charts" >
+                <div class="block-grey grid-2 pl0 pr0  pb15">
+                    <div id="loans_open" class="chart-s" style="height:250px;">
+
+                    </div>
+                    <script>
+                        jQuery(document).ready(function(){
+                            var chart = AmCharts.makeChart("loans_open",
+                                {
+                                    "type": "pie",
+                                    "balloonText": "[[value]] EUR",
+                                    "labelText": "",
+                                    "titleField": "cat",
+                                    "valueField": "amount",
+                                    "fillAlpha": .3,
+                                    "innerRadius": "50%",
+//                                    "lineAlpha": 1,
+                                    "startDuration": 1,
+                                    autoMargins: false,
+                                    marginTop: 0,
+                                    marginBottom: 10,
+                                    marginLeft: 0,
+                                    marginRight: 0,
+                                    pullOutRadius: 0,
+                                    "color": "#919191",
+//                               "categoryAxis": {
+//                                   "gridPosition": "start",
+//                                   "position": "left"
+//                               },
+                                    "trendLines": [],
+                                    "chartScrollbar": {
+                                        "enabled": false
+                                    },
+                                    "graphs": [
+                                        {
+                                            "balloonText": "[[value]] EUR",
+                                            "fillAlphas": .3,
+                                            "id": "AmGraph-11",
+//                                       "type": "column",
+                                            "lineAlpha": 1,
+                                            "title": "Loans on Schedule",
+                                            "valueField": "cat"
+                                        }
+//                                   {
+//                                       "balloonText": "[[value]]",
+//                                       "fillAlphas": .3,
+//                                       "id": "AmGraph-11",
+//                                       "type": "column",
+//                                       "lineAlpha": 1,
+//                                       "title": "Missed Repayments",
+//                                       "valueField": "missedrep"
+//                                   },
+//                                   {
+//                                       "balloonText": "[[value]]",
+//                                       "fillAlphas": .3,
+//                                       "id": "AmGraph-11",
+//                                       "type": "column",
+//                                       "lineAlpha": 1,
+//                                       "title": "Past Maturity ",
+//                                       "valueField": "pastmat"
+//                                   }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "axisAlpha": 0
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+
+                                    "titles": [],
+                                    "dataProvider": [
+                                        {
+                                            "amount": 29000,
+                                            "cat": "Money already paid"
+                                        },
+                                        {
+                                            "amount": 14000,
+                                            "cat": "Money still missing"
+                                        }
+
+
+
+                                    ],
+                                    "colors": [
+                                        "#0cd999",
+                                        "#d14f38",
+                                        "#0c4a7c",
+
+
+                                        "#0cd999",
+                                        "#9013fe",
+                                        "#a29b94"
+
+                                    ],
+                                    "legend": {
+                                        "enabled": true,
+                                        "align": "center",
+                                        "markerType": "circle",
+//                                   "useGraphSettings": true,
+                                        "color": "#919191"
+                                    }
+                                }
+
+                            );
+                        });
+                    </script>
+                </div>
+                    <div class="grid-2 calc-txt">
+                        <div class="title-4">Chart explanation</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque excepturi in quasi recusandae? Aliquid consectetur cum dolor earum harum labore magnam nemo nihil nulla odio placeat, repudiandae sapiente velit, voluptas.</p>
+                        <p>Aliquid consectetur cum dolor earum harum labore magnam nemo nihil nulla odio placeat, repudiandae sapiente velit, voluptas.</p>
+                        <p>Aliquid consectetur cum dolor earum harum labore magnam nemo nihil nulla odio placeat, repudiandae sapiente velit, voluptas.</p>
+                    </div>
+                </div>
+                <div class="title-3">Interest rate variation</div>
+                <div class=" block-grey">
+                    <div id="chart_var" class="chart-s" style="height:350px;">
+
+                    </div>
+                    <script>
+                        jQuery(document).ready(function(){
+                            var chart = AmCharts.makeChart("chart_var", {
+                                "type": "serial",
+                                "theme": "light",
+                                "categoryField": "month",
+//                                "rotate": true,
+                                "startDuration": 1,
+                                "color": "#919191",
+                                "categoryAxis": {
+                                    "gridPosition": "start",
+                                    "position": "left"
+                                },
+                                "trendLines": [],
+                                "graphs": [
+
+                                    {
+                                        "balloonText": "[[value]] %",
+                                        "fillAlphas": 0.3,
+                                        "id": "AmGraph-11",
+                                        "lineAlpha": 1,
+                                        "title": "percents",
+                                        "type": "column",
+                                        "valueField": "perc"
+                                    }
+                                ],
+                                "guides": [],
+                                "valueAxes": [
+                                    {
+                                        "id": "ValueAxis-11",
+                                        "position": "bottom",
+                                        "axisAlpha": 0
+                                    }
+                                ],
+                                "allLabels": [],
+                                "balloon": {},
+                                "titles": [],
+                                "dataProvider": [
+                                    {
+                                        "month": "2010",
+                                        "perc": 1
+                                    },
+                                    {
+                                        "month": "2011",
+                                        "perc": 3
+                                    },
+                                    {
+                                        "month": "2012",
+                                        "perc": 2
+                                    },
+                                    {
+                                        "month": "2013",
+                                        "perc": 3
+                                    },
+                                    {
+                                        "month": "2015",
+                                        "perc": 2
+                                    },
+                                    {
+                                        "month": '2016',
+                                        "perc": 3
+                                    },
+                                    {
+                                        "month": '2017',
+                                        "perc": 4
+                                    }
+
+                                ],
+                                "colors": [
+                                    "#4cc4d5",
+                                    "#0c4a7c",
+                                    "#f5a623",
+                                    "#0cd999",
+                                    "#9013fe",
+                                    "#a29b94"
+
+                                ],
+                                "legend": {
+                                    "enabled": false,
+                                    "useGraphSettings": true,
+                                    "color": "#919191"
+                                },
+                                "export": {
+                                    "enabled": true
+                                }
+
+                            });
+                        });
+                    </script>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

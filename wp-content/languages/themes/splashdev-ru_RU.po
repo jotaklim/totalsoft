@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-08-17 21:18+0200\n"
+"PO-Revision-Date: 2017-08-20 14:31+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ../../Downloads/night trials\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+msgid "Error 404"
+msgstr "Oшибка 404"
+
+#: 404.php:6
+msgid "Sorry, this page doesn't exist"
+msgstr "К сожалению, этой страницы не существует"
+
+#: 404.php:8 index.php:84 parts/header-float.php:6 parts/header-float.php:44
+#: parts/section-hero.php:12
+msgid "Contact Us"
+msgstr "Связаться с нами"
+
+#: archive.php:7
+msgid "Blog"
+msgstr "блог"
+
+#: archive.php:41
+msgid "Load more..."
+msgstr "загрузить более..."
+
+#: index.php:8
+msgid "We offer"
+msgstr "НАШИ УСЛУГИ"
+
+#: index.php:19
+msgid "Business Intelligence, CRM and ERP implementation"
+msgstr "ВНЕДРЕНИЕ BI, CRM И ERP"
+
+#: index.php:21
+msgid ""
+"8 out of 10 companies are currently implementing a business management "
+"software. By bringing SplashDev on board as your implementation services "
+"partner, you make sure that your CRM implementation and that your ERP "
+"implementation are a success. We help you to choose CRM tools, to determine "
+"which is the best ERP for your business and to complete implementations of "
+"Microsoft Dynamics, Microsoft Power BI, Charisma Business Suite, and HubSpot "
+"Sales and Marketing Automation on time and within budget."
+msgstr ""
+"8 из 10 компаний внедряют программное обеспечение для управления бизнесом. "
+"Выбирая SplashDev в качестве партнера технической поддержки, Вы обеспечите "
+"успешную работу CRM and ERP в Вашем бизнесе и полноценно внедрите Microsoft "
+"Dynamics, Charisma Business Suite или Hubspot CRM в срок и в рамках Вашего "
+"бюджета."
+
+#: index.php:32
+msgid "Project management"
+msgstr "УПРАВЛЕНИЕ ПРОЕКТАМИ"
+
+#: index.php:34
+msgid ""
+"Digitalization is the restructuring of a business through the use of digital "
+"technologies. You can only digitalize a business after digitizing its "
+"processes and information sources. SplashDev helps companies in the "
+"financial services and utility sectors to go digital. Our consultants "
+"translate needs into technical requirements, making sure your investment in "
+"software brings measurable business results."
+msgstr ""
+"Переход на электронные каналы взаимодействия это реструктуризация бизнеса с "
+"помощью цифровых технологий. Вы сможете перевести свой бизнес в цифровой "
+"формат только после приведения всех процессов и источников информации в "
+"цифровую форму. Наши консультанты преобразуют бизнеспотребности в "
+"технические требования таким образом, чтобы ваша инвестиция в программное "
+"обеспечение принесла ощутимые результаты."
+
+#: index.php:54
+msgid "Software development"
+msgstr "УСОВЕРШЕНСТВОВАНИЕ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ"
+
+#: index.php:56
+msgid ""
+"You have an ERP system or CRM in place and need to connect it to other "
+"applications? Do you want to reap real benefits from your Microsoft CRM and "
+"to launch an online POS? Or do you need to connect your own web app to "
+"Salesforce services? Our developers can bring to life the custom features "
+"you envision for your business software. Focus on what you do best and let "
+"SplashDev take care of the technology stack."
+msgstr ""
+"У вас есть действующие ERP или CRM-системы, и Вам необходимо обеспечить их "
+"связь с другими программами системы программного обеспечения? Вы хотите "
+"извлечь реальные преимущества Microsoft CRM и запустить онлайн POS? Или вы "
+"нуждаетесь в подключении своей веб-программы к Salesforce-сервису? Наши "
+"разработчики воплощают в жизнь индивидуальные черты, которые Вы хотели бы "
+"видеть в программном обеспечении своей компании. Сосредоточитесь на самом "
+"лучшем и дайте возможность SplashDev позабо-титься о комплексе всех "
+"технологий."
+
+#: index.php:66
+msgid "Business Development"
+msgstr "РАЗВИТИЕ БИЗНЕСА"
+
+#: index.php:68
+msgid ""
+"If your current challenge is getting more leads and getting better qualified "
+"leads, we can help you. We score leads according to their need for change "
+"and their fit to your business in terms of size, role and industry. We also "
+"offer interim management in the areas of business development, restructuring "
+"and change management."
+msgstr ""
+"Если Ваша текущая цель заключается в привлечении большего количества "
+"контактов (лидов) и улучшении их качества, мы сможем Вам помочь. Мы "
+"оцениваем лиды с точки зрения соответствия Вашему бизнесу и необходимостью "
+"изменений. Мы предлагаем временное управление в областях развития бизнеса, "
+"его реструктуризации и управлении изменениями."
+
+#: index.php:91
+msgid "Partners"
+msgstr "ПАРТНЕРЫ"
+
+#: page-template-archive.php:53
+msgid "Sorry, no posts matched your criteria."
+msgstr "Извините, нет записей, удовлетворяющих вашим условиям."
+
+#: page-template-landing1.php:18
+msgid "Get Report"
+msgstr "Получить отчет"
+
+#: page-template-landing2.php:32 parts/modal-contact-landing.php:7
+msgid "GET THE REPORT"
+msgstr "Получить отчет"
+
+#: page-template-thankyou.php:14
+msgid "Thanks for reaching out!"
+msgstr "СПАСИБО ЗА ОБРАЩЕНИЕ!"
+
+#: page-template-thankyou.php:16
+msgid "We will reply to the email you provided within 1-3 business days."
+msgstr "Мы свяжемся с Вами по оставленному e-mail в течение 1-3 рабочих дней."
+
+#: parts/footer-main.php:11 parts/footer-main.php:27
+msgid "Office in"
+msgstr "ОФИС В"
+
+#: parts/footer-main.php:11
+msgid "Vienna"
+msgstr "Вене"
+
+#: parts/footer-main.php:22 parts/footer-main.php:40
+msgid "Mo-Fr"
+msgstr "Пн-Пт"
+
+#: parts/footer-main.php:24 parts/footer-main.php:42
+msgid "Show on map"
+msgstr "Показать на карте"
+
+#: parts/footer-main.php:28
+msgid "Bucharest"
+msgstr "БУХАРЕСТЕ"
+
+#: parts/header-float.php:3 parts/header-float.php:25
+msgid "Our services"
+msgstr "Наши услуги"
+
+#: parts/header-float.php:9
+msgid "Choose your language"
+msgstr "Выберите ваш язык"
+
+#: parts/section-hero.php:10
+msgid "Agile software implementation for financial services and utilities"
+msgstr ""
+"Быстрое внедрение программного обеспечения для финансовых и коммунальных "
+"служб"
+
+msgid "What we do"
+msgstr "Что мы делаем"

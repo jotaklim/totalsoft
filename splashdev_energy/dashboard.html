@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Dale Cooper</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/cooper.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="history.html"><span class="icon-history"></span><span class="l-name">Billing History</span></a></li>
+        <li><a href="makepayment.html"><span class="icon-pay"></span><span class="l-name">Make a Payment</span></a></li>
+        <li><a href="input_meter.html"><span class="icon-pencil"></span><span class="l-name">Input Meter Reading</span></a></li>
+        <li><a href="consumption.html"><span class="icon-consumption"></span><span class="l-name">Energy Consumption</span></a></li>
+        <li><a href="tariff.html"><span class="icon-tariff"></span><span class="l-name">Choose Tariff</span></a></li>
+        <li><a href="reminders.html"><span class="icon-reminders"></span><span class="l-name">Set Reminders</span></a></li>
+        <li><a href="profile.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container with-sidebar">
+ <div class="page-content">
+   <div class="page-title-wrap cf">
+     <h1 class="page-title">Hello, Dale!</h1>
+
+   </div>
+     <div class="grid-row">
+         <div class="grid-3 excerpt-currmeter tac">
+             <div class="title">Your current meter reading is</div>
+             <div class="block-curr-meters">
+                 <span class="icon-item icon-electr"></span>
+                 <div class="meters-row">
+                     <span class="mi">2</span>
+                     <span class="mi">5</span>
+                     <span class="mi">8</span>
+                     <span class="mi">3</span>
+                     <span class="mi">5</span>
+                     <span class="coma">,</span>
+                     <span class="mi">7</span>
+                 </div>
+             </div>
+         </div>
+         <div class="grid-3 excerpt-currmeter tac">
+             <div class="title">You used</div>
+
+             <div id="chart_used_electr" class="chart-used-electr" style="height:150px">
+
+             </div>
+             <script>
+                 jQuery(document).ready(function () {
+                     var gaugeChart = AmCharts.makeChart( "chart_used_electr", {
+                         "type": "gauge",
+                         "theme": "light",
+                         "fontSize": 0,
+                         "axes": [ {
+                             "axisThickness": 0,
+                             "axisAlpha": 0.2,
+                             "tickAlpha": 0,
+                             "valueInterval": 300,
+                             'endAngle':90,
+                             'startAngle':-90,
+                             'labelsEnabled':false,
+
+                             "bands": [ {
+                                 "color": "#84b761",
+                                 "endValue": 600,
+                                 "startValue": 0,
+                                 "innerRadius": "50%",
+                             }, {
+                                 "color": "#fdd400",
+                                 "endValue": 900,
+                                 "innerRadius": "50%",
+                                 "startValue": 600
+                             }, {
+                                 "color": "#bd0a38",
+                                 "endValue": 1500,
+                                 "innerRadius": "50%",
+                                 "startValue": 900
+                             } ],
+                             "bottomText": "0 kWh",
+                             "bottomTextYOffset": -20,
+                             "endValue": 1500
+                         } ],
+                         "arrows": [ {
+                             "id": "GaugeArrow-1",
+                             "innerRadius": '0',
+                             "nailAlpha":0,
+                             "nailBorderAlpha":0,
+                             'alpha':.5,
+                             'startWidth':5,
+                             'borderAlpha':0,
+                             "value": 470
+                         } ],
+                         "export": {
+                             "enabled": false
+                         }
+                     } );
+                 })
+             </script>
+             <div class="chart-used-electr-label">470 kWh</div>
+
+             <p >so far this month</p>
+         </div>
+         <div class="grid-3 excerpt-currmeter tac">
+             <div class="title">You used</div>
+             <div class="txt-perc"><span class="txt-green txt-big">32%</span><br/>less kWh</div>
+             <p>than what you used in the same period last month</p>
+
+         </div>
+     </div>
+     <div class="grid-row">
+         <div class="grid-3 excerpt-currmeter tac">
+             <div class="title">Your current metering reading is</div>
+             <div class="block-curr-meters">
+                 <span class="icon-item icon-fire"></span>
+                 <div class="meters-row">
+                     <span class="mi">3</span>
+                     <span class="mi">1</span>
+                     <span class="mi">5</span>
+                     <span class="mi">7</span>
+                     <span class="mi">2</span>
+                     <span class="coma">,</span>
+                     <span class="mi">5</span>
+                 </div>
+             </div>
+         </div>
+         <div class="grid-3 excerpt-currmeter tac">
+             <div class="title">You used</div>
+
+             <div id="chart_used_gas" class="chart-used-electr" style="height:150px">
+
+             </div>
+             <script>
+                 jQuery(document).ready(function () {
+                     var gaugeChart = AmCharts.makeChart( "chart_used_gas", {
+                         "type": "gauge",
+                         "theme": "light",
+                         "fontSize": 0,
+                         "axes": [ {
+                             "axisThickness": 0,
+                             "axisAlpha": 0.2,
+                             "tickAlpha": 0,
+                             "valueInterval": 300,
+                             'endAngle':90,
+                             'startAngle':-90,
+                             'labelsEnabled':false,
+
+                             "bands": [ {
+                                 "color": "#84b761",
+                                 "endValue": 600,
+                                 "startValue": 0,
+                                 "innerRadius": "50%",
+                             }, {
+                                 "color": "#fdd400",
+                                 "endValue": 900,
+                                 "innerRadius": "50%",
+                                 "startValue": 600
+                             }, {
+                                 "color": "#bd0a38",
+                                 "endValue": 1500,
+                                 "innerRadius": "50%",
+                                 "startValue": 900
+                             } ],
+                             "bottomText": "0 kWh",
+                             "bottomTextYOffset": -20,
+                             "endValue": 1500
+                         } ],
+                         "arrows": [ {
+                             "id": "GaugeArrow-1",
+                             "innerRadius": '0',
+                             "nailAlpha":0,
+                             "nailBorderAlpha":0,
+                             'alpha':.5,
+                             'startWidth':5,
+                             'borderAlpha':0,
+                             "value": 1036
+                         } ],
+                         "export": {
+                             "enabled": false
+                         }
+                     } );
+                 })
+             </script>
+             <div class="chart-used-electr-label">1036 therms</div>
+
+             <p >so far this month</p>
+         </div>
+         <div class="grid-3 excerpt-currmeter tac">
+             <div class="title">You used</div>
+             <div class="txt-perc"><span class="txt-red txt-big">15%</span><br/>more therms</div>
+             <p>than what you used in the same period last month</p>
+
+         </div>
+     </div>
+     <div class="title-3">This is what you can do to save energy</div>
+     <ul class="list-saveideas">
+         <li>Change to LED bulbs.</li>
+         <li>Install automatic light dimmers.</li>
+         <li>Use fewer electronic devices between 18:00 and 20:00.</li>
+         <li>A hot shower instead of a hot bath saves you 20% of energy.</li>
+     </ul>
+     <p class="page-txt-big">Want more ideas how to save? <a href="energy_saving.html">See here.</a></p>
+ </div>
+    <div class="page-sidebar">
+        <div class="s-widget excerpt-season">
+    <div class="subtitle">2017 energy bills</div>
+    <div class="totalprice">$2,540</div>
+    <div class="item-row">
+        <div class="img-cont"><span class="icon-electr"></span></div>
+
+        <div class="consum">3,777.93 kWh</div>
+        <div class="price">$470.73</div>
+
+    </div>
+    <div class="item-row">
+        <div class="img-cont"> <span class="icon-fire"></span></div>
+
+        <div class="consum">364.3 therms</div>
+        <div class="price">$318.11</div>
+    </div>
+    <a href="input_meter.html" class="add-link">Input meter reading</a>
+</div>
+        <div class="s-widget widget-simple">
+    <div class="ws-head">Bill comparison ($)</div>
+    <div class="ws-content">
+        <div id="chart_comparison" class="chart-comparison sidebar-chart" style="height:160px;">
+
+        </div>
+        <script>
+            jQuery(document).ready(function(){
+                var chart = AmCharts.makeChart("chart_comparison", {
+                    "type": "serial",
+                    "theme": "light",
+                    "categoryField": "month",
+                    "rotate": false,
+                    "startDuration": 1,
+                    "color": "#A9A9A9",
+                    "categoryAxis": {
+                        "gridPosition": "start",
+                        "position": "left"
+                    },
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "balloonText": "Electricity:[[value]]$",
+                            "fillAlphas": 0.8,
+                            "id": "AmGraph-1",
+                            "lineAlpha": 0.2,
+                            "title": "Electricity",
+                            "type": "column",
+                            "valueField": "Electricity"
+                        },
+                        {
+                            "balloonText": "Gas:[[value]]$",
+                            "fillAlphas": 0.8,
+                            "id": "AmGraph-2",
+                            "lineAlpha": 0.2,
+                            "title": "Gas",
+                            "type": "column",
+                            "valueField": "Gas"
+                        }
+                    ],
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "position": "bottom",
+                            "axisAlpha": 0
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "month": 'May 2017',
+                            "Electricity": 234,
+                            "Gas": 290
+                        },
+                        {
+                            "month": 'June 2017',
+                            "Electricity": 250,
+                            "Gas": 189
+                        }
+                    ],
+                    "colors": [
+                        "#4cc4d5",
+                        "#0c4a7c",
+                        "#f5a623",
+                        "#43acd9",
+                        "#9013fe",
+                        "#a29b94"
+
+                    ],
+                    "export": {
+                        "enabled": false
+                    }
+
+                });
+            });
+        </script>
+    </div>
+
+</div>
+    </div>
+</div>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard-business.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Hans Kort</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/team1.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile-business.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard-business.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="history-business.html"><span class="icon-history"></span><span class="l-name">Billing History</span></a></li>
+        <li><a href="makepayment-business.html"><span class="icon-pay"></span><span class="l-name">Make a Payment</span></a></li>
+        <li><a href="input_meter-business.html"><span class="icon-pencil"></span><span class="l-name">Input Meter Reading</span></a></li>
+        <li><a href="consumption-business.html"><span class="icon-consumption"></span><span class="l-name">Energy Consumption</span></a></li>
+        <li><a href="floorplan-business.html"><span class="icon-floor"></span><span class="l-name">Floorplan</span></a></li>
+        <li><a href="tariff-business.html"><span class="icon-tariff"></span><span class="l-name">Choose Tariff</span></a></li>
+        <li><a href="roles-business.html"><span class="icon-users"></span><span class="l-name">Roles and permissions</span></a></li>
+        <li><a href="reminders-business.html"><span class="icon-reminders"></span><span class="l-name">Set Reminders</span></a></li>
+        <li><a href="profile-business.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container ">
+    <div class="page-inner">
+        <div class="page-title-wrap cf">
+            <h1 class="page-title">Floorplan</h1>
+        </div>
+        <div class="filters-bar">
+            <div class="custom-select cs-year no-current">
+                    <span data-val="" class="current-value">
+                        Choose building and floor
+                    </span>
+                <div class="list-values">
+                    <a data-val="Business" class="js_ajax-load " data-container="business_floorplan" data-url="ajax-modules/floorplan-build1.html" href="#">HQ Donetsk</a>
+                    <a data-val="Business" class="js_ajax-load cs-stepped" data-container="business_floorplan" data-url="ajax-modules/floorplan-build1-1.html" href="#">- 1. Floor</a>
+                    <a data-val="Business" class="js_ajax-load cs-stepped" data-container="business_floorplan" data-url="ajax-modules/floorplan-build1-2.html" href="#">- 2. Floor</a>
+                    <a data-val="Business" class="js_ajax-load " data-container="business_floorplan" data-url="ajax-modules/floorplan-build2.html" href="#">Thermal Plant Kiyv</a>
+                    <a data-val="Business" class="js_ajax-load cs-stepped" data-container="business_floorplan" data-url="ajax-modules/floorplan-build2-1.html" href="#">- 1. Floor</a>
+                    <a data-val="Business" class="js_ajax-load cs-stepped" data-container="business_floorplan" data-url="ajax-modules/floorplan-build2-2.html" href="#">- 2. Floor</a>
+                    <a data-val="Business" class="js_ajax-load cs-stepped" data-container="business_floorplan" data-url="ajax-modules/floorplan-build2-3.html" href="#">- 3. Floor</a>
+
+                </div>
+                <input type="hidden" id="" value="">
+            </div>
+
+        </div>
+        <div id="business_floorplan" class="business-inputs-wrap">
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

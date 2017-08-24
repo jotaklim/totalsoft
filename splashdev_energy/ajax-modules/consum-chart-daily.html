@@ -1,0 +1,117 @@
+<div class="filters-bar">
+    <div class="toggle-btns">
+        <a class="js_ajax-load current" data-container="billchart_wrap" data-url="ajax-modules/consum-chart-daily.html"  href="">Per time of the day</a> / <a class="js_ajax-load" data-container="billchart_wrap" data-url="ajax-modules/consum-chart-season.html"  href="">Per season</a> / <a class="js_ajax-load" data-container="billchart_wrap" data-url="ajax-modules/consum-chart-month.html"  href="">This month
+    </a> / <a class="js_ajax-load " data-container="billchart_wrap" data-url="ajax-modules/consum-chart-year.html"  href="">This year</a>
+    </div>
+</div>
+<div id="billchart_chart">
+    <div id="chart_daily" class="chart-s" style="height:350px;">
+
+    </div>
+    <script>
+        jQuery(document).ready(function(){
+            var chart = AmCharts.makeChart("chart_daily",
+                {
+                    "type": "serial",
+                    "categoryField": "date",
+                    "dataDateFormat": "YYYY-MM-DD HH",
+                    "startDuration": 1,
+                    "color": "#919191",
+                    "categoryAxis": {
+                        "minPeriod": "hh",
+                        "parseDates": true
+                    },
+                    "chartCursor": {
+                        "enabled": true,
+                        "categoryBalloonDateFormat": "JJ:NN"
+                    },
+                    "chartScrollbar": {
+                        "enabled": false
+                    },
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "balloonText": "[[title]] : [[value]] $",
+                            "fillAlphas": .3,
+                            "id": "AmGraph-11",
+                            "lineAlpha": 1,
+                            "title": "You",
+                            "valueField": "You"
+                        },
+                        {
+                            "balloonText": "[[title]] : [[value]] $",
+                            "fillAlphas": .2,
+                            "id": "AmGraph-12",
+                            "lineAlpha": 1,
+                            "title": "Neighbors",
+                            "valueField": "Neighbors"
+                        }
+                    ],
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "axisAlpha": 0
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "You": 1,
+                            "Neighbors": 3,
+                            "date": "2017-07-22 00"
+                        },
+                        {
+                            "You": 12,
+                            "Neighbors": 15,
+                            "date": "2017-07-22 08"
+                        },
+                        {
+                            "You": 8,
+                            "Neighbors": 10,
+                            "date": "2017-07-22 12"
+                        },
+                        {
+                            "You": 15,
+                            "Neighbors": 12,
+                            "date": "2017-07-22 18"
+                        },
+                        {
+                            "You": 38,
+                            "Neighbors": 45,
+                            "date": "2017-07-22 21"
+                        },
+                        {
+                            "You": 5,
+                            "Neighbors": 7,
+                            "date": "2017-07-22 24"
+                        },
+
+
+                    ],
+                    "colors": [
+                        "#4cc4d5",
+//                                        "#d4eff2",
+
+                        "#0c4a7c",
+
+                        "#f5a623",
+                        "#0cd999",
+                        "#9013fe",
+                        "#a29b94"
+
+                    ],
+                    "legend": {
+                        "enabled": true,
+                        "useGraphSettings": true,
+                        "color": "#919191"
+                    }
+                }
+
+            );
+        });
+    </script>
+</div>

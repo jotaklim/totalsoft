@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev Finance</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Cormorant+Garamond:300,400,500,600,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Dale Cooper</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/cooper.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="calculators_inner.html"><span class="icon-calculator"></span><span class="l-name">Calculators</span></a></li>
+        <li><a href="takeinterview.html"><span class="icon-quiz"></span><span class="l-name">Take an interview</span></a></li>
+        <li><a href="history.html"><span class="icon-history"></span><span class="l-name">Offers history</span></a></li>
+        <li><a href="comparison.html"><span class="icon-balance"></span><span class="l-name">Offers comparison</span></a></li>
+        <li><a href="reports.html"><span class="icon-consumption"></span><span class="l-name">Reports</span></a></li>
+        <li><a href="application.html"><span class="icon-pencil"></span><span class="l-name">Application</span></a></li>
+        <li><a href="application-history.html"><span class="icon-list-check"></span><span class="l-name">Applications history</span></a></li>
+        <li><a href="chat.html"><span class="icon-chat"></span><span class="l-name">Talk to a broker</span></a></li>
+        <li><a href="tips.html"><span class="icon-question"></span><span class="l-name">Financial advice</span></a></li>
+        <li><a href="profile.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container with-sidebar">
+    <div class="page-content">
+        <div class="page-title-wrap cf">
+            <h1 class="page-title">Lease Agreement</h1>
+        </div>
+
+        <form action="" class="application-form">
+            <!--<div class="title-3">Choose offer:</div>-->
+            <!--<div class="inp-row">-->
+                <!--<div class="custom-select">-->
+                    <!--<span data-val="Customer" class="current-value">-->
+                        <!--2016 BMW 3 Series 328i xDrive-->
+                    <!--</span>-->
+                    <!--<div class="list-values">-->
+                        <!--<a data-val="Tariff A" class="current" href="#">2016 BMW 3 Series 328i xDrive</a>-->
+                        <!--<a data-val="Tariff B" href="#">2015 BMW xDrive</a>-->
+                        <!--<a data-val="Tariff C" href="#">2014 BMW xDrive</a>-->
+                    <!--</div>-->
+                    <!--<input type="hidden" id="" value="Tariff A">-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="title-3">You are applying:</div>
+            <div class="check-row ">
+                <div class="checkbox-wrap radio">
+                    <input type="radio" name="app" id="app1" data-open="" checked>
+                    <label for="app1">Individually</label>
+                </div>
+                <div class="checkbox-wrap radio">
+                    <input type="radio" name="app" id="app2" data-open="coapp">
+                    <label for="app2">With another person</label>
+                </div>
+            </div>
+
+            <div class="title-2">Customer personal data:</div>
+
+            <div class="inp-row-3">
+                <div class="inp-row">
+                    <label for="">Customer</label>
+                    <input type="text" value="Dale Cooper">
+                </div>
+                <div class="inp-row">
+                    <label for="">Number</label>
+                    <input type="text" value="8767">
+                </div>
+                <div class="inp-row">
+                    <label for="">Name</label>
+                    <input type="text" value="Dale Cooper">
+                </div>
+                <div class="inp-row">
+                    <label for="">NZ Driver licence </label>
+                    <input type="text" value="234-12-34-34">
+                </div>
+                <div class="inp-row">
+                    <label for="">Email</label>
+                    <input type="email" value="coop@gmail.com">
+                </div>
+                <div class="inp-row">
+                    <label for="">Mobile</label>
+                    <input type="text" value="+380(93)743-77-88">
+                </div>
+                <div class="inp-row">
+                    <label for="">Work phone</label>
+                    <input type="text" value="+380(93)743-77-88">
+                </div>
+                <div class="inp-row">
+                    <label for="">Home phone</label>
+                    <input type="text" value="+380(93)743-77-88">
+                </div>
+            </div>
+            <div class="title-3">Address info</div>
+            <div class="inp-row">
+                <label for="">Physical address</label>
+                <input type="text" value="193 Princes Street Dunedin 9016">
+            </div>
+            <div class="inp-row">
+                <label for="">Postal address </label>
+                <input type="text" value="PO Box 885 Dunedin 9054">
+            </div>
+
+            <div class="hidden_block" data-openwrap="coapp">
+                <div class="title-2">Co-applicant personal data:</div>
+
+                <div class="inp-row-3">
+                    <div class="inp-row">
+                        <label for="">Customer</label>
+                        <input type="text" value="John Doe">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">Number</label>
+                        <input type="text" value="8767">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">Name</label>
+                        <input type="text" value="John Doe">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">NZ Driver licence </label>
+                        <input type="text" value="234-12-34-34">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">Email</label>
+                        <input type="email" value="doe@gmail.com">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">Mobile</label>
+                        <input type="text" value="+380(93)743-77-88">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">Work phone</label>
+                        <input type="text" value="+380(93)743-77-88">
+                    </div>
+                    <div class="inp-row">
+                        <label for="">Home phone</label>
+                        <input type="text" value="+380(93)743-77-88">
+                    </div>
+                </div>
+                <div class="title-3">Address info</div>
+                <div class="inp-row">
+                    <label for="">Physical address</label>
+                    <input type="text" value="193 Princes Street Dunedin 9016">
+                </div>
+                <div class="inp-row">
+                    <label for="">Postal address </label>
+                    <input type="text" value="PO Box 885 Dunedin 9054">
+                </div>
+            </div>
+
+
+            <div class="title-2">Smart Lease Portal company data</div>
+            <div class="profile-info-row">
+                <div class="label">Name:</div>
+                <div class="label-val">MTF Leasing Limited (MTFL)</div>
+            </div>
+
+            <div class="profile-info-row">
+                <div class="label">Physical address:</div>
+                <div class="label-val">193 Princes Street<br/>Dunedin 9016</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Postal address:</div>
+                <div class="label-val">PO Box 885<br/>Dunedin 9016</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Phone:</div>
+                <div class="label-val">03 477 0530</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Email:</div>
+                <div class="label-val">info@mtfl.com</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Website:</div>
+                <div class="label-val">mtfl.com.ua</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Company registration number:</div>
+                <div class="label-val">123123213</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">VAT number:</div>
+                <div class="label-val">987897</div>
+            </div>
+
+            <div class="title-2">Contract description</div>
+            <div class="profile-info-row">
+                <div class="label">Term:</div>
+                <div class="label-val">48 months</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Amount:</div>
+                <div class="label-val">$123,000</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Interest Rate:</div>
+                <div class="label-val">5%</div>
+            </div>
+            <div class="profile-info-row">
+                <div class="label">Down payment:</div>
+                <div class="label-val">$20,000</div>
+            </div>
+
+            <div class="title-2">Guarantees</div>
+            <div class="inp-row-2">
+                <div class="inp-row">
+                    <label for="">Property value</label>
+                    <input type="text" value="$456,727">
+                </div>
+                <div class="inp-row">
+                    <label for="">Vehicle value</label>
+                    <input type="text" value="$126,727">
+                </div>
+                <div class="inp-row">
+                    <label for="">Machinery or industrial equipment</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="inp-row">
+                <label for="">Jewelry value</label>
+                <input type="text" value="" disabled>
+                </div>
+
+            </div>
+
+           <div class="calc-txt mt30   ">
+               <div class="title-2">Conditions of termination (cancellation)</div>
+               <p>
+                   You may, at any time after six months from the date of this Lease, cancel this Lease by seven days prior written notice to MTFL. The Lease will cease at the end of the notice
+                   period (‘date of cancellation’). As a condition of cancellation, the Goods must be delivered to the Dealer (unless you are otherwise directed by MTFL) on, or prior to, the date
+                   of cancellation. If you fail to deliver the Goods, this Lease will continue in force. On, or prior to, the date of cancellation, you must pay MTFL:
+               </p>
+               <ul>
+               <li>
+                   any Payment and any other amount then due and payable under this Lease but unpaid;
+               </li>
+               <li>
+                   the amount (if any) calculated as at the date of cancellation by which the book value of the Goods (which is to include the relevant portion of each fee, charge and
+                   insurance premium specified under the heading 'Lease details' in this Disclosure Statement exceeds the then current wholesale market value of the Goods, both
+                   as certified by, or on behalf of, MTFL;
+               </li>
+               <li>
+                   an amount to compensate MTFL for its loss resulting from early cancellation (and, in particular, if any fixed rate funding arrangement entered into in processing
+                   your finance application must be broken) calculated as at the date of cancellation in accordance with the formula set out in clause 6 of Section 1 of the Standard
+                   Terms;
+               </li>
+               <li>
+                   $50.00 MTFL administration costs (including any GST).
+               </li>
+               </ul>
+               <div class="title-2">Some more text</div>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis cumque eius fugit odio optio quaerat ullam voluptate voluptatum. Debitis dolores enim eveniet iusto praesentium recusandae rem repellat totam!
+               </p>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis cumque eius fugit odio optio quaerat ullam voluptate voluptatum. Debitis dolores enim eveniet iusto praesentium recusandae rem repellat totam!
+               </p>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis cumque eius fugit odio optio quaerat ullam voluptate voluptatum. Debitis dolores enim eveniet iusto praesentium recusandae rem repellat totam!
+               </p>
+           </div>
+
+
+
+
+
+
+            <div class="btn-wrap">
+                <button class="btn-green showSignModal">Submit application</button>
+            </div>
+        </form>
+
+
+
+
+
+    </div>
+
+    <div class="page-sidebar">
+        <div class="s-widget widget-simple">
+    <div class="ws-head">Instructions</div>
+
+    <div class="ws-content">
+        <p>
+            You may apply for credit in your name alone.
+        </p>
+        <p>
+            If you are applying for credit with another person, please complete all sections.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsam, quos sunt unde velit voluptate voluptatem. Aliquam debitis harum nostrum sed similique! Animi dolorem ducimus error excepturi fugiat! Aspernatur, unde.</p>
+    </div>
+
+</div>
+        <div class="s-widget widget-simple">
+    <!--<div class="ws-head">Print Application</div>-->
+
+    <div class="ws-content">
+        <button class="btn-upload add-link btn-full" onclick="window.print();">Print Application</button>
+    </div>
+
+</div>
+    </div>
+
+
+</div>
+
+<div class="modal-wrap modal-sign">
+    <div class="modal-inner">
+        <form action="">
+            <p>Add digital signature<br/>
+            or<br/>
+                add a printed and signed application
+            </p>
+            <a data-href="doc_list" href="" class="btn-upload add_doc"><input type="file">Add document</a>
+            <div class="doc-list" data-id="doc_list">
+            </div>
+
+            <a href="" class="btn-green">Submit</a>
+        </form>
+    </div>
+</div>
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

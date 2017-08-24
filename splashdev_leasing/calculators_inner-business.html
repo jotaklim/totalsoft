@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Cormorant+Garamond:300,400,500,600,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu">
+
+<header class="mainheader cf">
+    <a href="dashboard-business.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">Hans Kort</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/team1.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile-business.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu">
+    <ul>
+        <li><a href="dashboard-business.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="calculators_inner-business.html"><span class="icon-calculator"></span><span class="l-name">Calculators</span></a></li>
+        <li><a href="takeinterview-business.html"><span class="icon-quiz"></span><span class="l-name">Take an interview</span></a></li>
+        <li><a href="history-business.html"><span class="icon-history"></span><span class="l-name">Offers history</span></a></li>
+        <li><a href="comparison-business.html"><span class="icon-balance"></span><span class="l-name">Offers comparison</span></a></li>
+        <li><a href="reports-business.html"><span class="icon-consumption"></span><span class="l-name">Reports</span></a></li>
+        <li><a href="application-business.html"><span class="icon-pencil"></span><span class="l-name">Application</span></a></li>
+        <li><a href="application-history-business.html"><span class="icon-list-check"></span><span class="l-name">Applications history</span></a></li>
+        <li><a href="chat-business.html"><span class="icon-chat"></span><span class="l-name">Talk to a broker</span></a></li>
+        <li><a href="tips-business.html"><span class="icon-question"></span><span class="l-name">Financial advice</span></a></li>
+        <li><a href="profile-business.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container">
+    <div class="page-inner">
+
+        <div class="tabs-container tabs-general">
+
+            <ul class="tabs-nav">
+                <li class="tab-item active"><a data-href="calcinterest" href="">Interest Calculator</a></li>
+                <li class="tab-item"><a data-href="calclease" href="">Lease Calculator</a></li>
+            </ul>
+            <div class="tab-content active" data-id="calcinterest">
+                <div class="grid-row">
+                    <div class="calc-wrap grid-3-1">
+                        <div class="omni-calculator" data-calculator="finance/simple-interest" data-width="300" data-config='{}' data-currency="UAH" data-show-row-controls="false">
+                            <div class="omni-calculator-header">Interest Calculator</div>
+                            <div class="omni-calculator-footer">
+                                <a href="https://www.omnicalculator.com/finance/simple-interest">Interest Calculator</a> by <a class="omni-calculator-img-link" href="https://www.omnicalculator.com">Omni</a>
+                            </div>
+                        </div>
+                        <div class="omni-link">by <a class="omni-calculator-img-link" target="_blank" href="https://www.omnicalculator.com">Omni</a></div>
+
+                    </div>
+                    <div class="calc-txt  grid-3-2">
+                        <div class="title-2">Interest Calculator</div>
+                        <p>Our simple interest calculator calculates a monthly payment on an interest-only loan. Just provide the interest percentage and you'll know how much that loan costs.</p>
+                        <p>
+                            The difference between "just" interest and mortgage payment is simple - with the mortgage calculator, every month you repay a part of the principal and your loan balance gets lower an lower. With the simple interest calculator, only the interest is paid. The loan amount stays the same forever. Nothing changes with time, so we didn't include a field that would specify your loan's duration.
+                        </p>
+                        <p>
+                            Simple interest can be used in both situations - when you borrow or lend money. In the former case, the interest is added to a separate pile of money each month (and is not a subject to extra interest next month).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-id="calclease">
+                <div class="grid-row">
+                    <div class="calc-wrap grid-3-1">
+                        <div class="omni-calculator" data-calculator="finance/lease" data-width="300" data-config='{}' data-currency="UAH" data-show-row-controls="false">
+                            <div class="omni-calculator-header">Lease Calculator</div>
+                            <div class="omni-calculator-footer">
+                                <a href="https://www.omnicalculator.com/finance/lease">Lease Calculator</a> by <a class="omni-calculator-img-link" href="https://www.omnicalculator.com">Omni</a>
+                            </div>
+                        </div>
+                        <div class="omni-link">by <a class="omni-calculator-img-link" target="_blank" href="https://www.omnicalculator.com">Omni</a></div>
+
+
+                    </div>
+                    <div class="calc-txt  grid-3-2">
+                        <div class="title-2">Lease Calculator</div>
+                        <p>
+                            Lease calculator helps you determine the monthly and total payments for a lease. In order to that you will need to know the initial and residual value of the good that you'd like to lease, the lease interest rate and the lease term.
+                        </p>
+                        <p>
+
+                            Lease calculator helps you determine the monthly and total payments for a lease. In order to that you will need to know the initial and residual value of the good that you'd like to lease, the interest rate and the lease term. This lease payment calculator could help you when you are trying to decide lease vs buy.
+
+                        </p>
+                        <div class="title-3">How to use the lease calculator</div>
+                        <p>
+                            It is very simple indeed.
+                        </p>
+                        <ul>
+                            <li>
+                                Determine the transaction and residual value (an appraisal of how much the good will be worth at the end of the lease period) of an asset you want to lease.
+                            </li>
+                            <li>Estimate the interest rate.</li>
+                            <li>And finally, put in the lease term.</li>
+                        </ul>
+                        <p>
+                            The lease payment calculator will estimate your monthly payment and total payments on the lease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</div>
+<script async src="https://cdn.omnicalculator.com/sdk.js"></script>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,849 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SplashDev for Energy</title>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700|Slabo+27px|Cormorant+Garamond:300,400,500,600,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+</head>
+<body class="has-left-menu layout-responsive">
+
+<header class="mainheader cf">
+    <a href="dashboard-broker.html" class="fl logo">
+        <img src="assets/img/logo.png" srcset="assets/img/logo.png 1x, assets/img/logo@2x.png 2x" alt="">
+    </a>
+    <div class="hamburger hamburger--elastic fr" id="openMobileMenu">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+    </div>
+    <div class="user-dropdown fr">
+        <div class="drop-trigg">
+            <div class="username">John Doe</div>
+            <div class="img-cont " style="background-image: url(assets/img/del/team3.jpg)">
+            </div>
+        </div>
+        <div class="drop-list">
+            <a href="profile-broker.html">Profile</a>
+            <a href="login.html">Log out</a>
+        </div>
+    </div>
+
+</header>
+
+
+
+
+<main class="main-container">
+
+
+<aside class="left-mainmenu" id="mobileMenu">
+    <ul>
+        <li><a href="dashboard-broker.html"><span class="icon-dashboard"></span><span class="l-name">Dashboard</span></a></li>
+        <li><a href="managedcustomers-broker.html"><span class="icon-users"></span><span class="l-name">Managed customers</span></a></li>
+        <li><a href="reports-broker.html"><span class="icon-consumption"></span><span class="l-name">Reports</span></a></li>
+        <li><a href="chat-broker.html"><span class="icon-chat"></span><span class="l-name">Talk to a customer</span></a></li>
+        <li><a href="profile-broker.html"><span class="icon-user"></span><span class="l-name">My Profile</span></a></li>
+    </ul>
+</aside>
+
+
+
+
+
+<div class="page-container ">
+    <div class="page-inner">
+        <div class="page-title-wrap cf">
+            <h1 class="page-title">Reports</h1>
+        </div>
+
+
+
+        <div class="row-charts" id="loan_chart1">
+            <div class="grid-row ">
+                <div class="block-grey grid-3-2">
+
+                    <div class="filters-bar">
+                        <div class="toggle-btns">
+                            <a class="js_ajax-load current" data-container="loan_chart1"
+                               data-url="ajax-modules/chart-loan-res.html" href="">Loans Released
+                            </a> / <a class="js_ajax-load " data-container="loan_chart1"
+                                      data-url="ajax-modules/chart-loan-col.html" href="">Loan Collections</a>
+                        </div>
+                    </div>
+
+                    <div id="loans_rel" class="chart-s" style="height:250px;">
+
+                    </div>
+                    <script>
+                        jQuery(document).ready(function () {
+                            var chart = AmCharts.makeChart("loans_rel",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "date",
+//                               "dataDateFormat": "YYYY-MM-DD HH",
+                                    "startDuration": 1,
+                                    "color": "#919191",
+                                    "categoryAxis": {
+//                                   "minPeriod": "hh",
+//                                   "parseDates": true
+                                    },
+                                    "chartCursor": {
+                                        "enabled": true,
+//                                   "categoryBalloonDateFormat": "JJ:NN"
+                                    },
+                                    "chartScrollbar": {
+                                        "enabled": false
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [
+                                        {
+                                            "balloonText": "[[value]] $",
+                                            "fillAlphas": .3,
+                                            "id": "AmGraph-11",
+                                            "lineAlpha": 1,
+                                            "title": "amount",
+                                            "valueField": "amount"
+                                        }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "axisAlpha": 0
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+
+                                    "titles": [],
+                                    "dataProvider": [
+                                        {
+                                            "amount": 20000,
+                                            "date": "Jan"
+                                        },
+                                        {
+                                            "amount": 31000,
+                                            "date": "Feb"
+                                        },
+                                        {
+                                            "amount": 12000,
+                                            "date": "Mar"
+                                        },
+                                        {
+                                            "amount": 46000,
+                                            "date": "Apr"
+                                        },
+                                        {
+                                            "amount": 45000,
+                                            "date": "May"
+                                        },
+                                        {
+                                            "amount": 34000,
+                                            "date": "Jun"
+                                        },
+                                        {
+                                            "amount": 25000,
+                                            "date": "Jul"
+                                        },
+                                        {
+                                            "amount": 28000,
+                                            "date": "Aug"
+                                        },
+                                        {
+                                            "amount": 34000,
+                                            "date": "Sep"
+                                        },
+                                        {
+                                            "amount": 23000,
+                                            "date": "Oct"
+                                        },
+                                        {
+                                            "amount": 48000,
+                                            "date": "Nov"
+                                        },
+                                        {
+                                            "amount": 35000,
+                                            "date": "Dec"
+                                        }
+
+
+                                    ],
+                                    "colors": [
+                                        "#4cc4d5",
+//                                        "#d4eff2",
+
+                                        "#0c4a7c",
+
+                                        "#f5a623",
+                                        "#0cd999",
+                                        "#9013fe",
+                                        "#a29b94"
+
+                                    ],
+                                    "legend": {
+                                        "enabled": false,
+                                        "useGraphSettings": true,
+                                        "color": "#919191"
+                                    }
+                                }
+                            );
+                        });
+                    </script>
+
+                </div>
+                <div class="grid-3-1 calc-txt">
+                    <div class="title-4">Chart explanation</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fugiat quas quo unde vel.
+                        Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi
+                        harum molestiae neque reiciendis.</p>
+                    <p>Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi harum
+                        molestiae neque reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-charts" id="loan_chart2">
+            <div class="grid-row ">
+                <div class="block-grey grid-3-2">
+
+                    <div class="filters-bar">
+                        <div class="toggle-btns">
+                            <a class="js_ajax-load current" data-container="loan_chart2"
+                               data-url="ajax-modules/chart-loan-res-num.html" href="">Number of Loans Released
+                            </a> / <a class="js_ajax-load " data-container="loan_chart2"
+                                      data-url="ajax-modules/chart-loan-col-num.html" href="">Number of Repayments Collected</a>
+                        </div>
+                    </div>
+
+                    <div id="loans_rel_num" class="chart-s" style="height:250px;">
+
+                    </div>
+                    <script>
+                        jQuery(document).ready(function () {
+                            var chart = AmCharts.makeChart("loans_rel_num",
+                                {
+                                    "type": "serial",
+                                    "theme": "light",
+                                    "categoryField": "month",
+//                               "rotate": true,
+                                    "startDuration": 1,
+                                    "color": "#919191",
+                                    "categoryAxis": {
+                                        "gridPosition": "start",
+                                        "position": "left"
+                                    },
+                                    "trendLines": [],
+                                    "chartScrollbar": {
+                                        "enabled": false
+                                    },
+                                    "graphs": [
+                                        {
+                                            "balloonText": "[[value]]",
+                                            "fillAlphas": .3,
+                                            "id": "AmGraph-11",
+                                            "type": "column",
+                                            "lineAlpha": 1,
+                                            "title": "amount",
+                                            "valueField": "amount"
+                                        }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "axisAlpha": 0
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+
+                                    "titles": [],
+                                    "dataProvider": [
+                                        {
+                                            "amount": 32,
+                                            "month": "Jan"
+                                        },
+                                        {
+                                            "amount": 12,
+                                            "month": "Feb"
+                                        },
+                                        {
+                                            "amount": 24,
+                                            "month": "Mar"
+                                        },
+                                        {
+                                            "amount": 31,
+                                            "month": "Apr"
+                                        },
+                                        {
+                                            "amount": 38,
+                                            "month": "May"
+                                        },
+                                        {
+                                            "amount": 29,
+                                            "month": "Jun"
+                                        },
+                                        {
+                                            "amount": 30,
+                                            "month": "Jul"
+                                        },
+                                        {
+                                            "amount": 19,
+                                            "month": "Aug"
+                                        },
+                                        {
+                                            "amount": 24,
+                                            "month": "Sep"
+                                        },
+                                        {
+                                            "amount": 23,
+                                            "month": "Oct"
+                                        },
+                                        {
+                                            "amount": 28,
+                                            "month": "Nov"
+                                        },
+                                        {
+                                            "amount": 35,
+                                            "month": "Dec"
+                                        }
+
+
+                                    ],
+                                    "colors": [
+                                        "#4cc4d5",
+                                        "#0c4a7c",
+
+//                                        "#d4eff2",
+
+
+                                        "#f5a623",
+                                        "#0cd999",
+                                        "#9013fe",
+                                        "#a29b94"
+
+                                    ],
+                                    "legend": {
+                                        "enabled": false,
+                                        "useGraphSettings": true,
+                                        "color": "#919191"
+                                    }
+                                }
+                            );
+                        });
+                    </script>
+
+                </div>
+                <div class="grid-3-1 calc-txt">
+                    <div class="title-4">Chart explanation</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fugiat quas quo unde vel.
+                        Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi
+                        harum molestiae neque reiciendis.</p>
+                    <p>Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi harum
+                        molestiae neque reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-charts grid-row">
+            <div class="block-grey grid-3-2">
+                <div class="filters-bar">
+                    <div class="toggle-btns">
+                        <span class="" data-container="loan_chart2">Number of Fully Paid Loans
+                        </span>
+                    </div>
+                </div>
+                <div id="loans_ful_num" class="chart-s" style="height:250px;">
+
+                </div>
+                <script>
+                    jQuery(document).ready(function () {
+                        var chart = AmCharts.makeChart("loans_ful_num",
+                            {
+                                "type": "serial",
+                                "theme": "light",
+                                "categoryField": "month",
+//                               "rotate": true,
+                                "startDuration": 1,
+                                "color": "#919191",
+                                "categoryAxis": {
+                                    "gridPosition": "start",
+                                    "position": "left"
+                                },
+                                "trendLines": [],
+                                "chartScrollbar": {
+                                    "enabled": false
+                                },
+                                "graphs": [
+                                    {
+                                        "balloonText": "[[value]]",
+                                        "fillAlphas": .3,
+                                        "id": "AmGraph-11",
+                                        "type": "column",
+                                        "lineAlpha": 1,
+                                        "title": "amount",
+                                        "valueField": "amount"
+                                    }
+                                ],
+                                "guides": [],
+                                "valueAxes": [
+                                    {
+                                        "id": "ValueAxis-1",
+                                        "axisAlpha": 0
+                                    }
+                                ],
+                                "allLabels": [],
+                                "balloon": {},
+
+                                "titles": [],
+                                "dataProvider": [
+                                    {
+                                        "amount": 12,
+                                        "month": "Jan"
+                                    },
+                                    {
+                                        "amount": 14,
+                                        "month": "Feb"
+                                    },
+                                    {
+                                        "amount": 10,
+                                        "month": "Mar"
+                                    },
+                                    {
+                                        "amount": 4,
+                                        "month": "Apr"
+                                    },
+                                    {
+                                        "amount": 10,
+                                        "month": "May"
+                                    },
+                                    {
+                                        "amount": 11,
+                                        "month": "Jun"
+                                    },
+                                    {
+                                        "amount": 7,
+                                        "month": "Jul"
+                                    },
+                                    {
+                                        "amount": 5,
+                                        "month": "Aug"
+                                    },
+                                    {
+                                        "amount": 13,
+                                        "month": "Sep"
+                                    },
+                                    {
+                                        "amount": 9,
+                                        "month": "Oct"
+                                    },
+                                    {
+                                        "amount": 5,
+                                        "month": "Nov"
+                                    },
+                                    {
+                                        "amount": 16,
+                                        "month": "Dec"
+                                    }
+
+
+                                ],
+                                "colors": [
+                                    "#4cc4d5",
+                                    "#0c4a7c",
+
+                                    "#f5a623",
+                                    "#0cd999",
+                                    "#9013fe",
+                                    "#a29b94"
+
+                                ],
+                                "legend": {
+                                    "enabled": false,
+                                    "useGraphSettings": true,
+                                    "color": "#919191"
+                                }
+                            }
+                        );
+                    });
+                </script>
+            </div>
+            <div class=" grid-3-1 calc-txt">
+                <div class="title-4">Chart explanation</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fugiat quas quo unde vel.
+                    Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi
+                    harum molestiae neque reiciendis.</p>
+                <p>Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi harum
+                    molestiae neque reiciendis.</p>
+            </div>
+        </div>
+
+        <div class="row-charts" id="loan_chart3">
+            <div class="grid-row ">
+                <div class="block-grey grid-3-2">
+
+                    <div class="filters-bar">
+                        <div class="toggle-btns">
+                            <a class="js_ajax-load current" data-container="loan_chart3"
+                               data-url="ajax-modules/chart-sales-fun.html" href="">Sales funnel
+                            </a> / <a class="js_ajax-load " data-container="loan_chart3"
+                                      data-url="ajax-modules/chart-loan-stat.html" href="">Open Loans Status</a>
+                        </div>
+                    </div>
+
+                    <div id="sales_funnel" class="chart-s" style="height:250px;">
+
+                    </div>
+                    <script>
+                        jQuery(document).ready(function () {
+                            var chart = AmCharts.makeChart("sales_funnel",
+                                {
+                                    "type": "serial",
+                                    "theme": "light",
+                                    "categoryField": "user",
+//                               "rotate": true,
+                                    "startDuration": 1,
+                                    "color": "#919191",
+                                    "categoryAxis": {
+                                        "gridPosition": "start",
+                                        "position": "left"
+                                    },
+                                    "trendLines": [],
+                                    "chartScrollbar": {
+                                        "enabled": false
+                                    },
+                                    "graphs": [
+                                        {
+                                            "balloonText": "[[title]]: [[value]]",
+                                            "fillAlphas": .7,
+                                            "id": "AmGraph-11",
+                                            "type": "column",
+//                                            "lineAlpha": 1,
+                                            "title": "Signed users",
+                                            "valueField": "signin_users"
+                                        },
+                                        {
+                                            "balloonText": "[[title]]: [[value]]",
+                                            "fillAlphas": .7,
+                                            "id": "AmGraph-12",
+                                            "type": "column",
+//                                            "lineAlpha": 1,
+                                            "title": "Applications sent",
+                                            "valueField": "applications_sent"
+                                        },
+                                        {
+                                            "balloonText": "[[title]]: [[value]]",
+                                            "fillAlphas": .7,
+                                            "id": "AmGraph-13",
+                                            "type": "column",
+//                                            "lineAlpha": 1,
+                                            "title": "Approved and released applications",
+                                            "valueField": "approved_release"
+                                        }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "stackType": "100%",
+                                            "axisAlpha": 0
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+
+                                    "titles": [],
+                                    "dataProvider": [
+                                        {
+                                            "user":'Users',
+                                            "signin_users": 45,
+                                            "applications_sent": 39,
+                                            "approved_release": 25
+
+                                        }
+
+                                    ],
+                                    "colors": [
+
+                                        "#d14f38",
+                                        "#f5a623",
+
+
+//                                        "#d4eff2",
+
+
+//                                        "#f5a623",
+                                        "#0cd999",
+                                        "#9013fe",
+                                        "#a29b94"
+
+                                    ],
+                                    "legend": {
+                                        "enabled": false,
+                                        "useGraphSettings": true,
+                                        "color": "#919191"
+                                    }
+                                }
+                            );
+                        });
+                    </script>
+
+                </div>
+                <div class="grid-3-1 calc-txt">
+                    <div class="title-4">Chart explanation</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fugiat quas quo unde vel.
+                        Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi
+                        harum molestiae neque reiciendis.</p>
+                    <p>Adipisci aut consequatur, dolor dolorem eum explicabo incidunt quam tenetur. Culpa eligendi harum
+                        molestiae neque reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row-charts" id="loan_chart4">
+                <div class="block-grey">
+
+                    <div class="filters-bar">
+                        <div class="toggle-btns">
+                            <a class="js_ajax-load current" data-container="loan_chart4"
+                               data-url="ajax-modules/chart-targ-month.html" href="">Monthly sales targets
+                            </a> / <a class="js_ajax-load " data-container="loan_chart4"
+                                      data-url="ajax-modules/chart-targ-quart.html" href="">Quarterly sales targets</a> / <a class="js_ajax-load " data-container="loan_chart4"
+                                                                                                                               data-url="ajax-modules/chart-targ-year.html" href="">Yearly sales targets</a>
+                        </div>
+                    </div>
+
+                    <div id="targ_month" class="chart-s" style="height:350px;">
+
+                    </div>
+                    <script>
+                        jQuery(document).ready(function () {
+                            var chart = AmCharts.makeChart("targ_month",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "date",
+                                    "startDuration": 1,
+                                    "color": "#919191",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "chartCursor": {
+                                        "enabled": true,
+//                                   "categoryBalloonDateFormat": "JJ:NN"
+                                    },
+                                    "chartScrollbar": {
+                                        "enabled": false
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [
+                                        {
+                                            "balloonText": "[[title]]: [[value]] EUR",
+                                            "fillAlphas": .3,
+                                            "lineAlpha": 1,
+                                            "id": "AmGraph-1",
+//                                            "labelText": "[[title]]",
+                                            "title": "Credits",
+                                            "type": "column",
+                                            "valueField": "credit"
+                                        },
+                                        {
+                                            "balloonText": "[[title]]: [[value]] EUR",
+                                            "fillAlphas": .3,
+                                            "lineAlpha": 1,
+                                            "id": "AmGraph-2",
+//                                            "labelText": "[[title]]",
+                                            "title": "Loans",
+                                            "type": "column",
+                                            "valueField": "loan"
+                                        },
+                                        {
+                                            "balloonText": "[[title]]: [[value]] EUR",
+                                            "fillAlphas": .3,
+                                            "lineAlpha": 1,
+                                            "id": "AmGraph-3",
+//                                            "labelText": "[[title]]",
+                                            "title": "Lease",
+                                            "type": "column",
+                                            "valueField": "lease"
+                                        },
+                                        {
+                                            "balloonText": "[[title]]: [[value]] EUR",
+                                            "bullet": "round",
+                                            "id": "AmGraph-4",
+//                                            "labelText": "[[value]]",
+                                            "lineThickness": 2,
+                                            "title": "Target",
+                                            "valueField": "target"
+                                        }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "",
+                                            "axisAlpha": 0
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+
+                                    "dataProvider": [
+                                        {
+                                            "credit": 20000,
+                                            "loan": 15000,
+                                            "lease": 18000,
+                                            "target":18000,
+                                            "date": "Jan"
+                                        },
+                                        {
+                                            "credit": 25000,
+                                            "loan": 13000,
+                                            "lease": 17000,
+                                            "target":18000,
+                                            "date": "Feb"
+                                        },
+                                        {
+                                            "credit": 31000,
+                                            "loan": 18000,
+                                            "lease": 12000,
+                                            "target":18000,
+                                            "date": "Mar"
+                                        },
+                                        {
+                                            "credit": 21000,
+                                            "loan": 16000,
+                                            "lease": 12000,
+                                            "target":19000,
+                                            "date": "Apr"
+                                        },
+                                        {
+                                            "credit": 18000,
+                                            "loan": 17000,
+                                            "lease": 19000,
+                                            "target":19000,
+                                            "date": "May"
+                                        },
+                                        {
+                                            "credit": 31000,
+                                            "loan": 16000,
+                                            "lease": 19000,
+                                            "target":19000,
+                                            "date": "Jun"
+                                        },
+                                        {
+                                            "credit": 22000,
+                                            "loan": 15000,
+                                            "lease": 17000,
+                                            "date": "Jul"
+                                        },
+                                        {
+                                            "credit": 23000,
+                                            "loan": 18000,
+                                            "lease": 19000,
+                                            "target":20000,
+                                            "date": "Aug"
+                                        },
+                                        {
+                                            "credit": 23000,
+                                            "loan": 18000,
+                                            "lease": 12000,
+                                            "target":20000,
+                                            "date": "Sep"
+                                        },
+                                        {
+                                            "credit": 22000,
+                                            "loan": 15000,
+                                            "lease": 19000,
+                                            "target":20000,
+                                            "date": "Oct"
+                                        },
+                                        {
+                                            "credit": 21000,
+                                            "loan": 21000,
+                                            "lease": 16000,
+                                            "target":20000,
+                                            "date": "Nov"
+                                        },
+                                        {
+                                            "credit": 23000,
+                                            "loan": 18000,
+                                            "lease": 19000,
+                                            "target":20000,
+                                            "date": "Dec"
+                                        }
+
+
+                                    ],
+                                    "colors": [
+                                        "#4cc4d5",
+//                                        "#d4eff2",
+
+                                        "#0c4a7c",
+                                        "#0cd999",
+
+                                        "#f5a623",
+
+                                        "#9013fe",
+                                        "#a29b94"
+
+                                    ],
+                                    "titles": [],
+                                    "legend": {
+                                        "enabled": true,
+                                        "useGraphSettings": true,
+                                        "color": "#919191"
+                                    }
+                                }
+                            );
+                        });
+                    </script>
+
+                </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+</main>
+
+<footer class="mainfooter">
+
+</footer>
+
+
+<div class="preloader">
+  <div class="preloader__content">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+</div>
+
+<div id="modal-container"></div>
+
+
+<script src="assets/js/scripts.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102012213-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

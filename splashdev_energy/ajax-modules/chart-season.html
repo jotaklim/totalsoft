@@ -1,0 +1,104 @@
+<div class="filters-bar">
+    <div class="custom-select cs-year">
+                    <span data-val="Customer" class="current-value">
+                        2017
+                    </span>
+        <div class="list-values">
+            <a data-val="Customer" class="current js_ajax-load" data-container="billchart_chart" data-url="ajax-modules/chart-season2017.html" href="#">2017</a>
+            <a data-val="Business" class="js_ajax-load" data-container="billchart_chart" data-url="ajax-modules/chart-season2016.html" href="#">2016</a>
+            <a data-val="Business" class="js_ajax-load" data-container="billchart_chart" data-url="ajax-modules/chart-season2015.html" href="#">2015</a>
+        </div>
+        <input type="hidden" id="" value="Customer">
+    </div>
+    <div class="toggle-btns">
+        <a class="js_ajax-load " data-container="billchart_wrap" data-url="ajax-modules/chart-monthly.html"  href="">Month</a> / <a class="js_ajax-load current" data-container="billchart_wrap" data-url="ajax-modules/chart-season.html"  href="">Season</a> / <a class="js_ajax-load" data-container="billchart_wrap" data-url="ajax-modules/chart-year.html"  href="">Year</a>
+    </div>
+</div>
+<div id="billchart_chart">
+    <div id="chart_month_2017" class="chart-s" style="height:350px;">
+
+    </div>
+    <script>
+        jQuery(document).ready(function(){
+            var chart = AmCharts.makeChart("chart_month_2017", {
+                "type": "serial",
+                "theme": "light",
+                "categoryField": "month",
+                "rotate": false,
+                "startDuration": 1,
+                "color": "#A9A9A9",
+                "categoryAxis": {
+                    "gridPosition": "start",
+                    "position": "left"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "balloonText": "Electricity:[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "Electricity",
+                        "type": "column",
+                        "valueField": "Electricity"
+                    },
+                    {
+                        "balloonText": "Gas:[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "Gas",
+                        "type": "column",
+                        "valueField": "Gas"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-1",
+                        "position": "bottom",
+                        "axisAlpha": 0
+                    }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "titles": [],
+                "dataProvider": [
+                    {
+                        "month": 'Winter',
+                        "Electricity": 234,
+                        "Gas": 290
+                    },
+                    {
+                        "month": 'Spring',
+                        "Electricity": 342,
+                        "Gas": 150
+                    },
+                    {
+                        "month": 'Summer',
+                        "Electricity": 265,
+                        "Gas": 198
+                    },
+                    {
+                        "month": 'Fall',
+                        "Electricity": 234,
+                        "Gas": 290
+                    }
+                ],
+                "colors": [
+                    "#4cc4d5",
+                    "#0c4a7c",
+                    "#f5a623",
+                    "#43acd9",
+                    "#9013fe",
+                    "#a29b94"
+
+                ],
+                "export": {
+                    "enabled": true
+                }
+
+            });
+        });
+    </script>
+</div>

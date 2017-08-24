@@ -1,0 +1,143 @@
+<div class="block-grey">
+
+    <div class="filters-bar">
+        <div class="toggle-btns">
+            <a class="js_ajax-load " data-container="loan_chart4"
+               data-url="ajax-modules/chart-targ-month.html" href="">Monthly sales targets
+            </a> / <a class="js_ajax-load current" data-container="loan_chart4"
+                      data-url="ajax-modules/chart-targ-quart.html" href="">Quarterly sales targets</a> / <a class="js_ajax-load " data-container="loan_chart4"
+                                                                                                             data-url="ajax-modules/chart-targ-year.html" href="">Yearly sales targets</a>
+        </div>
+    </div>
+
+    <div id="targ_quart" class="chart-s" style="height:350px;">
+
+    </div>
+    <script>
+        jQuery(document).ready(function () {
+            var chart = AmCharts.makeChart("targ_quart",
+                {
+                    "type": "serial",
+                    "categoryField": "date",
+                    "startDuration": 1,
+                    "color": "#919191",
+                    "categoryAxis": {
+                        "gridPosition": "start"
+                    },
+                    "chartCursor": {
+                        "enabled": true,
+//                                   "categoryBalloonDateFormat": "JJ:NN"
+                    },
+                    "chartScrollbar": {
+                        "enabled": false
+                    },
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "balloonText": "[[title]]: [[value]] EUR",
+                            "fillAlphas": .3,
+                            "lineAlpha": 1,
+                            "id": "AmGraph-1",
+//                                            "labelText": "[[title]]",
+                            "title": "Credits",
+                            "type": "column",
+                            "valueField": "credit"
+                        },
+                        {
+                            "balloonText": "[[title]]: [[value]] EUR",
+                            "fillAlphas": .3,
+                            "lineAlpha": 1,
+                            "id": "AmGraph-2",
+//                                            "labelText": "[[title]]",
+                            "title": "Loans",
+                            "type": "column",
+                            "valueField": "loan"
+                        },
+                        {
+                            "balloonText": "[[title]]: [[value]] EUR",
+                            "fillAlphas": .3,
+                            "lineAlpha": 1,
+                            "id": "AmGraph-3",
+//                                            "labelText": "[[title]]",
+                            "title": "Lease",
+                            "type": "column",
+                            "valueField": "lease"
+                        },
+                        {
+                            "balloonText": "[[title]]: [[value]] EUR",
+                            "bullet": "round",
+                            "id": "AmGraph-4",
+//                                            "labelText": "[[value]]",
+                            "lineThickness": 2,
+                            "title": "Target",
+                            "valueField": "target"
+                        }
+                    ],
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "title": "",
+                            "axisAlpha": 0
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+
+                    "dataProvider": [
+                        {
+                            "credit": 20000,
+                            "loan": 15000,
+                            "lease": 18000,
+                            "target":18000,
+                            "date": "Winter"
+                        },
+                        {
+                            "credit": 25000,
+                            "loan": 13000,
+                            "lease": 17000,
+                            "target":18000,
+                            "date": "Spring"
+                        },
+                        {
+                            "credit": 31000,
+                            "loan": 18000,
+                            "lease": 12000,
+                            "target":18000,
+                            "date": "Summer"
+                        },
+                        {
+                            "credit": 21000,
+                            "loan": 16000,
+                            "lease": 12000,
+                            "target":19000,
+                            "date": "Fall"
+                        }
+
+
+                    ],
+                    "colors": [
+                        "#4cc4d5",
+//                                        "#d4eff2",
+
+                        "#0c4a7c",
+                        "#0cd999",
+
+                        "#f5a623",
+
+                        "#9013fe",
+                        "#a29b94"
+
+                    ],
+                    "titles": [],
+                    "legend": {
+                        "enabled": true,
+                        "useGraphSettings": true,
+                        "color": "#919191"
+                    }
+                }
+            );
+        });
+    </script>
+
+</div>
